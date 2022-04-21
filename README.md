@@ -6,6 +6,11 @@
 * Definir un archivo info.md que describa de que se trata el proyecto.  (ejemplos, spotify, netflix, recodatorio de clases, juego... etc..)
 * Definir un componente que sea perfil de usuario... 
 
+
+# homework
+
+* Si pudieron hacer el componente perfil de usuario ahora tienen que hacer el componente Login...
+
 ---
 
 # Getting Started with Create React App
