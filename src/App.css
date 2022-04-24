@@ -1,0 +1,93 @@
+/* CSS Reset */
+#element { margin:0; padding:0; font-size:100%; line-height:1; }
+
+.App {
+  text-align: center;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.App-logo {
+  height: 50vmin;
+  pointer-events: none;
+  border-radius: 15%;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 1s linear;
+  }
+}
+h1{
+font-size: 40px;
+
+}
+
+.App-body {
+  background-color: #340116;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  font-size: calc(20px + 2vmin);
+  color: white;
+}
+
+form{
+  width: 50%;
+  
+  background-color: #340116;
+  color: white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: space-around;
+  
+}
+.usuario {
+  
+  width: 100%;
+  height: 30px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #555;
+}
+
+.contraseña {
+ 
+  width: 100%;
+  height: 30px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #555;
+}
+
+.usuario::-webkit-input-placeholder {
+  text-align: center;
+  line-height: 30px;/* Centrado vertical */
+}
+.contraseña::-webkit-input-placeholder {
+  text-align: center;
+  line-height: 30px;/* Centrado vertical */
+}
+
+.boton{
+  
+  width: 100%;
+  height: 60px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: rgb(252, 252, 252);
+  margin-bottom: 90px;
+  background-color: #555;
+}
