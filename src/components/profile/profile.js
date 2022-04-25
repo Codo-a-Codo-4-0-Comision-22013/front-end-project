@@ -18,9 +18,23 @@ export default class Profile extends React.Component {
     }
     
     componentDidMount() {
-        this.setState({
+        /*this.setState({
         user: this.props.user,
-        });
+        });*/
+
+        fetch('https://jsonplaceholder.typicode.com/users/5')
+            .then(response => response.json())
+            .then(json => {
+                console.log(json)
+                this.setState({
+                    user: {
+                        name: json.name,
+                        username: json.username,
+                        email: json.email, 
+                        photo: "https://picsum.photos/200/300" //this.props.user.photo // No uso photo del JSON
+                    }
+                })
+            })
     }
     
     render() {

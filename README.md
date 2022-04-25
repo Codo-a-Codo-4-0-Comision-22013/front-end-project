@@ -11,6 +11,18 @@
 
 * Si pudieron hacer el componente perfil de usuario ahora tienen que hacer el componente Login...
 
+# homework
+
+* Agregar un boton al componente para que cuando se presione, este tragia un nuevo usuario desde https://jsonplaceholder.typicode.com/
+
+# Topic of the week
+Semana: 25/4
+8. Promises, asincronía y MAP
+
+Semana: 2/5
+9. Consumiendo APIs
+
+
 ---
 
 # Getting Started with Create React App
