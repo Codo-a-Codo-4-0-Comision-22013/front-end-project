@@ -21,7 +21,7 @@ export default class Profile extends React.Component {
         /*this.setState({
         user: this.props.user,
         });*/
-
+        // Que pasaria si el fetch no funciona? o tarda mucho?
         fetch('https://jsonplaceholder.typicode.com/users/5')
             .then(response => response.json())
             .then(json => {
