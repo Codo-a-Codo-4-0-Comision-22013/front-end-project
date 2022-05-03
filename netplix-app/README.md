@@ -1,5 +1,24 @@
 # front-end-project
 
+# Dependencias a instalar
+En el pack.json estan las versiones
+* En la carpeta netplix-app
+npm i react-router-dom
+npm install -D tailwindcss postcss autoprefixer
+
+* En la carpeta netplix-back
+npm i express
+
+# Para levantar el cliente
+* En la carpeta netplix-app
+npm start
+
+# Para levantar el servidor
+<!-- Despues agregagaremos nodemon
+npm run dev -->
+* En la carpeta netplix-back
+npm start
+
 # homework
 
 * Crear un proyecto de React.
