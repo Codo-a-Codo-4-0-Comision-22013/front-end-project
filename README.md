@@ -7,7 +7,7 @@ En el pack.json estan las versiones
 ### `npm install -D tailwindcss postcss autoprefixer`
 
 * En la carpeta netplix-back
-npm i express`
+### `npm i express`
 
 # Para levantar el cliente
 * En la carpeta netplix-app
