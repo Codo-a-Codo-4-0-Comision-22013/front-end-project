@@ -1,9 +1,11 @@
-import { LoginForm } from './LoginForm';
+//import { LoginForm } from './LoginForm';
+import { RegisterForm } from './RegisterForm';
 
 export const AuthScreen = () => {
     return (
         <div>
-            <LoginForm />
+            <h1>form</h1>
+            <RegisterForm />
         </div>
     );
 };
