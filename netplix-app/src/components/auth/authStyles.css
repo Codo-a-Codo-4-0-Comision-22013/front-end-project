@@ -1,0 +1,9 @@
+.auth-form{
+    width: 400px;
+    background-color: #24303c;
+    padding: 20px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 5px;
+    color:white
+}
