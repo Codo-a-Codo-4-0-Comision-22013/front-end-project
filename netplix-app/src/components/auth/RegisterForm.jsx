@@ -4,9 +4,10 @@ export const RegisterForm = () => {
       <h1 className="auth-form-title">Formulario de Registro:</h1>
       <hr />
 
-      <form autoComplete="off" action="">
+      <form className="auth-form" autoComplete="off" action="">
         <label htmlFor="name">Nombre/s:</label>
         <input
+          className="auth-input"
           type="text"
           name="name"
           id="name"
@@ -14,6 +15,7 @@ export const RegisterForm = () => {
         />
         <label htmlFor="lastName">Apellido/s:</label>
         <input
+          className="auth-input"
           type="text"
           name="lastName"
           id="lastName"
@@ -21,6 +23,7 @@ export const RegisterForm = () => {
         />
         <label htmlFor="userName">Nombre de Usuario:</label>
         <input
+          className="auth-input"
           type="text"
           name="userName"
           id="userName"
@@ -28,6 +31,7 @@ export const RegisterForm = () => {
         />
         <label htmlFor="userEmail">E-mail:</label>
         <input
+          className="auth-input"
           type="email"
           name="userEmail"
           id="userEmail"
@@ -35,6 +39,7 @@ export const RegisterForm = () => {
         />
         <label htmlFor="confirmEmail">Confirme su e-mail:</label>
         <input
+          className="auth-input"
           type="email"
           name="confirmEmail"
           id="confirmEmail"
@@ -42,6 +47,7 @@ export const RegisterForm = () => {
         />
         <label htmlFor="userPassword">Contraseña:</label>
         <input
+          className="auth-input"
           type="password"
           name="userPassword"
           id="userPassword"
@@ -49,6 +55,7 @@ export const RegisterForm = () => {
         />
         <label htmlFor="confirmPassword">Confirme su contraseña:</label>
         <input
+          className="auth-input"
           type="password"
           name="confirmPassword"
           id="confirmPassword"
@@ -56,7 +63,7 @@ export const RegisterForm = () => {
         />
         <button>Registrarse</button>
         <hr />
-        <span>¿Ya tienes una cuenta?</span> Iniciar sesión
+        <small>¿Ya tienes una cuenta?</small> Iniciar sesión
       </form>
     </>
   );

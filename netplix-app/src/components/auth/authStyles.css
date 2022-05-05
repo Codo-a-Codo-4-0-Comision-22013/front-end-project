@@ -8,9 +8,7 @@
     color: #09102a;
 }
 
-
-
-.auth-form , .auth-form-title{
+.auth-form , .auth-form-title, .auth-form label {
     background-color: #c1c1c1;
 }
 
