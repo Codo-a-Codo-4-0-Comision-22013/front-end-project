@@ -1,17 +1,18 @@
 //import { LoginForm } from './LoginForm';
 import { LoginForm } from './LoginForm';
 import { RegisterForm } from './RegisterForm';
-import './authStyles.css'
+import './authStyles.css';
 
 export const AuthScreen = () => {
   return (
-    <div className='auth-form'>
-      <h1>form</h1>
-      <LoginForm />
+    <div className="container-form">
+      <div className="auth-form">
+        <LoginForm />
 
-      <hr />
-      <br />
-      <RegisterForm />
+        <hr />
+        <br />
+        <RegisterForm />
+      </div>
     </div>
   );
 };

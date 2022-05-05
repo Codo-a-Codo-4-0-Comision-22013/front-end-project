@@ -1,10 +1,10 @@
 export const RegisterForm = () => {
   return (
     <>
-      <h1>Formulario de Registro:</h1>
+      <h1 className="auth-form-title">Formulario de Registro:</h1>
       <hr />
 
-      <form action="">
+      <form autoComplete="off" action="">
         <label htmlFor="name">Nombre/s:</label>
         <input
           type="text"
@@ -56,7 +56,7 @@ export const RegisterForm = () => {
         />
         <button>Registrarse</button>
         <hr />
-        <span>¿Ya tienes una cuenta?</span> <a href="#">Iniciar sesión</a>
+        <span>¿Ya tienes una cuenta?</span> Iniciar sesión
       </form>
     </>
   );
