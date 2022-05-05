@@ -1,6 +1,6 @@
 # front-end-project-team-9
 
-* El proyecto estará inspirado en la plataforma de streaming Netflix
+* El proyecto estará inspirado en la plataforma de streaming Netflix.
 
 # homework
 
