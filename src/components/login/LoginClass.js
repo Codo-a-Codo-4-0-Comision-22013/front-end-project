@@ -1,7 +1,18 @@
 import './Login.css';
+import { useFormInput } from '../utils/forms';
+import { URL } from '../../constant';
 
 function Login(props){
-    function handleSubmit(jsonData){
+    
+    const username = useFormInput('');
+    const password = useFormInput('');
+
+    function handleSubmit(){
+
+        let jsonData = {
+            "username": username.value,
+            "password": password.value
+        };
 
         const options = {
             method: "POST",
@@ -11,7 +22,7 @@ function Login(props){
             body: JSON.stringify(jsonData)
         };
 
-        fetch('https://jsonplaceholder.typicode.com/login', options)
+        fetch(URL, options)
             .then(response => response.json())
             .then(json => {
                 console.log(json)
@@ -23,10 +34,10 @@ function Login(props){
             <div className="login-header">
                 <div className="login-header-logo">
                     <label>Username</label>
-                    <input></input><br></br>
+                    <input {...username}></input><br></br>
                     <label>Password</label>
-                    <input type="password"></input><br></br>
-                    <button onClick={console.log('Lllamada a donde...')}>Login</button>
+                    <input type="password" {...password}></input><br></br>
+                    <button onClick={handleSubmit}>Login</button>
                 </div>
             </div>
         </div>
