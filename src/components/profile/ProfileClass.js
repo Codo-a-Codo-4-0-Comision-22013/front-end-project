@@ -2,7 +2,7 @@
 // Como por ejemplo: Nombre/Username, Foto de perfil, email, etc.
 
 import React from 'react';
-import './profile.css';
+import './Profile.css';
 
 export default class Profile extends React.Component {
     constructor(props) {

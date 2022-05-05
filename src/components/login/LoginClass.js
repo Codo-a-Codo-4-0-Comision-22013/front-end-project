@@ -1,4 +1,4 @@
-import './login.css';
+import './Login.css';
 
 function Login(props){
     function handleSubmit(jsonData){
