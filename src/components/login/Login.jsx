@@ -1,10 +1,19 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 const Login = () => {
-  const [loginData, setLoginData] = useState();
+  const [loginData, setLoginData] = useState({ username: '', password:'' });
+
+
+  const onInputChange = (e) => {
+    const { name, value } = e.target
+    
+    setLoginData((prev) => ({...prev, [name]: value}))
+  }
 
   const handleSubmit = (e) => {
-
+    e.preventDefault();
+    console.log(loginData)
+    
     // const options = {
     //     method: "POST",
     //     headers: {
@@ -25,14 +34,29 @@ const Login = () => {
   <div className="login">
     <div className="login-header">
       <div className="login-header-logo">
-        <form onSubmit={handleSubmit}>
-          <label>Username:
-            <input type="text" placeholder="Username"/><br/>
-          </label>
 
-          <label>Password:
-            <input type="password" placeholder="Password"/><br/>
+        <form onSubmit={handleSubmit}>
+          <label>
+            <span>Username: </span>
+            <input 
+              type="text" 
+              placeholder="Username" 
+              name="username" 
+              value={loginData.username}
+              onChange={onInputChange}/>
           </label>
+          <br/>
+
+          <label>
+            <span>Password: </span>
+            <input 
+              type="password" 
+              placeholder="Password" 
+              name="password" 
+              value={loginData.password}
+              onChange={onInputChange}/>
+          </label>
+          <br/>
 
           <button type="submit">
             Login
