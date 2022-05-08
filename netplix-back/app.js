@@ -1,2 +1,9 @@
+import Server from "./src/models/server.js";
+import dotenv from "dotenv";
 
-console.log('hola mundo');
+// Inicializamos el archivo de configuracion
+dotenv.config();
+
+// Inicializamos el servidor
+const server = new Server();
+server.listen();
