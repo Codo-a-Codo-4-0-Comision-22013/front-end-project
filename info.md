@@ -1,4 +1,5 @@
-# front-end-project
+# netplix-app
+El proyecto va a tratar de un clone de netflix, no en su totalidad de funciones.
 
 # Dependencias a instalar
 En el pack.json estan las versiones
@@ -7,53 +8,18 @@ En el pack.json estan las versiones
 ### `npm install -D tailwindcss postcss autoprefixer`
 
 * En la carpeta netplix-back
-### `npm i express`
+### `npm i express nodemon dotenv mongoose`
 
 # Para levantar el cliente
 * En la carpeta netplix-app
 ### `npm start`
 
 # Para levantar el servidor
-<!-- Despues agregagaremos nodemon
-npm run dev -->
 * En la carpeta netplix-back
 ### `npm start`
+### `npm run dev` nodemon
 
-# homework
-
-* Crear un proyecto de React.
-* Definir un archivo info.md que describa de que se trata el proyecto.  (ejemplos, spotify, netflix, recodatorio de clases, juego... etc..)
-* Definir un componente que sea perfil de usuario... 
-
-
-# homework
-
-* Si pudieron hacer el componente perfil de usuario ahora tienen que hacer el componente Login...
-
-# homework
-
-* Agregar un boton al componente para que cuando se presione, este tragia un nuevo usuario desde https://jsonplaceholder.typicode.com/
-
-# Topic of the week
-Semana: 25/4
-8. Promises, asincronía y MAP
-
-Semana: 2/5
-9. Consumiendo APIs
-
-
----
-
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
+<!-- ------------------------------------------------------ -->
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
