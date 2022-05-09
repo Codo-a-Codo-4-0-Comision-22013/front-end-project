@@ -1,18 +1,19 @@
-//import { LoginForm } from './LoginForm';
+
 import { LoginForm } from './LoginForm';
-import { RegisterForm } from './RegisterForm';
+// import { RegisterForm } from './RegisterForm';
 
 
 export const AuthScreen = () => {
   return (
-    <div >
- 
+    <main className='container mx-auto mt-5 p-5 md:flex md:justify-center'>
+      <div className='md:w-1/3 bg-slate-800 rounded-lg p-8'>
+
         <LoginForm />
 
-        <hr />
-        <br />
-        <RegisterForm />
      
-    </div>
+        {/* <RegisterForm /> */}
+     
+      </div>
+    </main>
   );
 };

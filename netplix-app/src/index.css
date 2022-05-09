@@ -3,7 +3,10 @@
 @import 'tailwindcss/utilities';
 
 * {
-  background-color: #000d20;
   margin: 0px;
   padding: 0px;
+}
+
+body {
+  background-color: #000d20;
 }
