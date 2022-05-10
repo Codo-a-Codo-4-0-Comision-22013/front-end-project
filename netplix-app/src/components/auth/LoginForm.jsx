@@ -33,11 +33,11 @@ export const LoginForm = () => {
         <input
           type="submit"
           value="Iniciar Sesión"
-          className="bg-red-600 w-full py-2 mt-3 text-white uppercase font-bold shadow-md rounded hover:cursor-pointer hover:bg-red-700 transition-colors"
+          className="bg-red-700 w-full py-2 mt-3 text-white uppercase font-bold shadow-md rounded hover:cursor-pointer hover:bg-red-600 transition-colors"
         />
-        <small className="block">¿Necesitas ayuda?</small>
-        <span >¿Primera vez en Netplix?</span> 
-        <span className=""> Suscríbete ahora</span>
+        <button className="block mt-2 hover:text-gray-600 transition-colors">¿Necesitas ayuda?</button>
+        <span >¿Primera vez en Netplix? </span> 
+        <button className="text-sky-700 hover:text-sky-500 transition-colors">Suscríbete ahora</button>
       </form>
     </>
   );
