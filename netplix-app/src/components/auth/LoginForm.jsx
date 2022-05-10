@@ -1,12 +1,12 @@
 export const LoginForm = () => {
   return (
     <>
-      <h1 className="text-neutral-200 font-black text-3xl capitalize">
+      <h1 className="text-zinc-800 font-black text-3xl capitalize">
         Inicia sesión
       </h1>
       <form
         autoComplete="off"
-        className="text-neutral-200 my-4 bg-gray-700 shadow rounded-lg p-5"
+        className="text-slate-900 my-4 bg-gray-100 shadow rounded-lg p-5"
       >
         <div className="my-1">
           <label className="block text-xl font-bold" htmlFor="email">
@@ -16,7 +16,7 @@ export const LoginForm = () => {
             type="email"
             id="email"
             placeholder="Ingrese el email"
-            className="w-full mt-1 p-2 shadow-lg border-gray-700 rounded-xl bg-gray-900"
+            className="w-full mt-1 p-2 shadow-md border-gray-700 rounded-xl bg-zinc-300 hover:bg-zinc-200 transition-colors"
           />
         </div>
         <div className="my-1">
@@ -27,16 +27,17 @@ export const LoginForm = () => {
             type="password"
             id="password"
             placeholder="Ingrese su contraseña"
-            className="w-full mt-1 p-2 shadow-lg border-gray-700 rounded-xl bg-gray-900"
+            className="w-full mt-1 p-2 shadow-md border-gray-700 rounded-xl bg-zinc-300 hover:bg-zinc-200 transition-colors"
           />
         </div>
         <input
           type="submit"
           value="Iniciar Sesión"
-          className="bg-red-600 w-full py-2 mt-3 text-white uppercase font-bold rounded hover:cursor-pointer hover:bg-red-700"
+          className="bg-red-600 w-full py-2 mt-3 text-white uppercase font-bold shadow-md rounded hover:cursor-pointer hover:bg-red-700 transition-colors"
         />
-        <small>¿Necesitas ayuda?</small>
-        <span>¿Primera vez en Netplix?</span> <small>Suscríbete ahora</small>
+        <small className="block">¿Necesitas ayuda?</small>
+        <span >¿Primera vez en Netplix?</span> 
+        <span className=""> Suscríbete ahora</span>
       </form>
     </>
   );
