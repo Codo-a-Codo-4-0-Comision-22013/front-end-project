@@ -1,6 +1,12 @@
 /* CSS Reset */
 #element { margin:0; padding:0; font-size:100%; line-height:1; }
 
+/* Color Palette */
+:root {
+  --darkred: #340116;
+  --lighttext: white;
+}
+
 .App {
   text-align: center;
   box-sizing: border-box;
@@ -36,7 +42,6 @@ font-size: 40px;
 
 form{
   width: 50%;
-  
   background-color: #340116;
   color: white;
   border-radius: 10px;

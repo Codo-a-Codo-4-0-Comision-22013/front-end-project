@@ -2,12 +2,20 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
+import NavBar from './components/NavBar';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <div className="app-container">
+      <div className="sidebar-container">
+        <NavBar name="loco gatti" avatar="imgs/profile_picture.jpg"/>
+      </div>
+      <div className="body-container">
+        <App />
+      </div>
+    </div>
   </React.StrictMode>
 );
 

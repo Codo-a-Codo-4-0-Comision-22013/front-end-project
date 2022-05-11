@@ -1,3 +1,9 @@
+/* sanitizando un poco */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 body {
   margin: 0;
@@ -11,4 +17,31 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+/* main layout */
+.app-container {
+  /* border: 1px solid yellow; */
+  display: flex;
+  background-color: var(--darkred);
+  color: var(--lighttext);
+}
+
+.body-container {
+  /* border: 1px solid yellow; */
+  display: flex;
+  flex: 1;
+  
+}
+
+.sidebar-container {
+  /* border: 1px solid violet; */
+  display: flex;
+  flex: 0;
+  height: 100vh;
+  position: sticky;
+  top: 0; /* para cuando queda fijo */
+  left: 0; /* para cuando queda fijo */
+  align-items: center;
+  justify-content: flex-start;
 }

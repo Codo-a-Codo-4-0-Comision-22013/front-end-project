@@ -3,7 +3,6 @@ import './App.css';
 
 function App() {
   return (
-    <body>
       <div className="App">
         <div className="App-body">
           <h1>Bienvenido a PronQatar 2022</h1> 
@@ -23,7 +22,6 @@ function App() {
           </form>
         </div>    
       </div>
-    </body>
   );
 }
 
