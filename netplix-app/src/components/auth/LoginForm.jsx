@@ -35,9 +35,13 @@ export const LoginForm = () => {
           value="Iniciar Sesión"
           className="bg-red-700 w-full py-2 mt-3 text-white uppercase font-bold shadow-md rounded hover:cursor-pointer hover:bg-red-600 transition-colors"
         />
-        <button className="block mt-2 hover:text-gray-600 transition-colors">¿Necesitas ayuda?</button>
-        <span >¿Primera vez en Netplix? </span> 
-        <button className="text-sky-700 hover:text-sky-500 transition-colors">Suscríbete ahora</button>
+        <button className="block mt-2 hover:text-gray-600 transition-colors">
+          ¿Necesitas ayuda?
+        </button>
+        <span>¿Primera vez en Netplix? </span>
+        <button className="text-sky-700 hover:text-sky-500 transition-colors">
+          Suscríbete ahora
+        </button>
       </form>
     </>
   );
