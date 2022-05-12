@@ -1,6 +1,5 @@
 import logo from './logo.svg';
 import './App.css';
-import Profile from './components/profile/profile.js';
 import Navbar from './components/navbar/navbar';
 import Router from './routes';
 
