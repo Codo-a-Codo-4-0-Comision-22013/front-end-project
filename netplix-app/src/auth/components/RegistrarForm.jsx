@@ -1,7 +1,8 @@
-export const RegisterForm = () => {
+import { Link } from 'react-router-dom';
+
+export const RegistrarForm = () => {
   return (
     <>
-
       <form
         autoComplete="off"
         className="text-slate-900 my-4 bg-gray-100 shadow rounded-lg p-5"
@@ -77,11 +78,14 @@ export const RegisterForm = () => {
           value="Registrarse"
           className="bg-red-700 w-full py-2 mt-3 text-white uppercase font-bold shadow-md rounded hover:cursor-pointer hover:bg-red-600 transition-colors"
         />
-        <span>¿Ya tienes una cuenta? </span>
-        <button className="mt-2 text-sky-700 hover:text-sky-500 transition-colors">
-          Inicie sesión
-        </button>
       </form>
+      <span>¿Ya tienes una cuenta? </span>
+      <Link
+        to="/"
+        className="mt-2 text-sky-700 hover:text-sky-500 transition-colors"
+      >
+        Inicie sesión
+      </Link>
     </>
   );
 };
