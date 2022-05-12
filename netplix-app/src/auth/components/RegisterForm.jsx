@@ -1,9 +1,7 @@
 export const RegisterForm = () => {
   return (
     <>
-      <h1 className="text-zinc-800 font-black text-3xl capitalize">
-        Formulario de registro:
-      </h1>
+
       <form
         autoComplete="off"
         className="text-slate-900 my-4 bg-gray-100 shadow rounded-lg p-5"
