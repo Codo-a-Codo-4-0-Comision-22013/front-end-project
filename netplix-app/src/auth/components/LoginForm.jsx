@@ -34,9 +34,7 @@ export const LoginForm = () => {
           value="Iniciar Sesión"
           className="bg-red-700 w-full py-2 mt-3 text-white uppercase font-bold shadow-md rounded hover:cursor-pointer hover:bg-red-600 transition-colors"
         />
-        <Link to="Inicio">
-            Para ir al inicio hacer click aqui, este enlace es temporal
-        </Link>
+
       </form>
       <button className="block mt-2 hover:text-gray-600 transition-colors">
         ¿Necesitas ayuda?
@@ -44,7 +42,7 @@ export const LoginForm = () => {
       <span>¿Primera vez en Netplix? </span>
 
       <Link
-        to="registrar"
+        to=""
         className="text-sky-700 hover:text-sky-500 transition-colors"
       >
         Suscríbete ahora

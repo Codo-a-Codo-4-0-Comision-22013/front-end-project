@@ -1,1 +1,6 @@
-//Todo el perfil de usuario
+
+export const PerfilUsuario = () => {
+  return (
+    <div>PerfilUsuario</div>
+  )
+}

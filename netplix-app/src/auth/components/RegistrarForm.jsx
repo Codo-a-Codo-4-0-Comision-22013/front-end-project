@@ -81,7 +81,7 @@ export const RegistrarForm = () => {
       </form>
       <span>¿Ya tienes una cuenta? </span>
       <Link
-        to="/"
+        to=""
         className="mt-2 text-sky-700 hover:text-sky-500 transition-colors"
       >
         Inicie sesión
