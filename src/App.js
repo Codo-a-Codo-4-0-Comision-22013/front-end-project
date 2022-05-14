@@ -113,7 +113,7 @@ const useStyles = makeStyles(theme => ({
 		backgroundImage: `url(${logo})`,
 		backgroundRepeat: 'no-repeat',
 		backgroundSize: 'contain',
-		backgroundPosition: 'center',
+		marginTop: theme.spacing(20)
 		// height: '50vh',
 		
     //  	[theme.breakpoints.down(400 + theme.spacing(2) + 2)]: {
@@ -127,10 +127,10 @@ const useStyles = makeStyles(theme => ({
 	},	
 	form: {
 		
-		
+				
     	// marginleft: theme.spacing(5),
 		width: '100%',
-		marginTop: theme.spacing(50)
+		marginTop: theme.spacing(40)
 	},
 	button: {
 		margin: theme.spacing(3, 0, 2)
