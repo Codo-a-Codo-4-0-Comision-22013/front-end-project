@@ -8,6 +8,7 @@ import { Registrar } from './auth/pages/Registrar';
 import { Peliculas } from './dashboard/components/Peliculas';
 import { Dashboard } from './dashboard/Dashboard';
 import { PerfilUsuario } from './dashboard/pages/PerfilUsuario';
+import { SelectProfile } from './profile/pages/SelectProfile';
 
 export const App = () => {
   return (
@@ -21,10 +22,12 @@ export const App = () => {
             <Route path="confirmar/:id" element={<ConfirmarCuenta />}></Route>
         </Route>
 
-        <Route path="/" element={<Dashboard />}> 
+        <Route path="/" element={<Dashboard />}>
           <Route path="inicio" element={<Peliculas />}></Route>
           <Route path="perfil-usuario" element={<PerfilUsuario />}></Route>
         </Route>
+
+        <Route path="/elegir-perfil" element={<SelectProfile />}></Route>
       </Routes>
     </BrowserRouter>
   );
