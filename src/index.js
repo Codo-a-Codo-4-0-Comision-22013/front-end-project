@@ -2,15 +2,24 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import Login from './components/login';
+import NavBar from './components/NavBar';
 import reportWebVitals from './reportWebVitals';
 
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
 root.render(
   <React.StrictMode>
-    <Login />
-    </React.StrictMode>
+    <div className="app-container">
+      <div className="sidebar-container">
+        <NavBar name="loco gatti" avatar="imgs/profile_picture.jpg"/>
+      </div>
+      <div className="body-container">
+        <Login />
+      </div>
+    </div>
+  </React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function
