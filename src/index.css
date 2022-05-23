@@ -1,15 +1,13 @@
-<<<<<<< HEAD
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-=======
+
 /* sanitizando un poco */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
->>>>>>> d43276f73812ef4b119712da0b950bdbbb64d264
 
 body {
   margin: 0;
