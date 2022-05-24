@@ -10,6 +10,7 @@ import { Dashboard } from './dashboard/Dashboard';
 import { PerfilUsuario } from './dashboard/pages/PerfilUsuario';
 import { SelectProfile } from './profile/pages/SelectProfile';
 import { MoviesList } from './profile/pages/MoviesList';
+import { MovieDetail } from './movie/pages/MovieDetail';
 
 export const App = () => {
   return (
@@ -30,6 +31,7 @@ export const App = () => {
         </Route>
 
         <Route path="/elegir-perfil" element={<SelectProfile />}></Route>
+        <Route path="/ver-pelicula/:id" element={<MovieDetail />}></Route>
       </Routes>
     </BrowserRouter>
   );

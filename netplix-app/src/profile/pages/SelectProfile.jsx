@@ -33,7 +33,7 @@ export class SelectProfile extends React.Component {
                 <div class="grid place-items-center h-screen">
                     <div>
                         <h1 class="text-center text-3xl mb-10">¿Quién esta viendo ahora?</h1>
-                        <div class="">
+                        <div class="text-center">
                             {
                                 this.state.profiles?.map((profile) => {
                                     return (
