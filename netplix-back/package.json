@@ -1,8 +1,8 @@
 {
   "dependencies": {
-    "dotenv": "^16.0.0",
+    "dotenv": "^16.0.1",
     "express": "^4.18.1",
-    "mongoose": "^6.3.2",
+    "mongoose": "^6.3.4",
     "nodemon": "^2.0.16"
   },
   "name": "netplix-back",
