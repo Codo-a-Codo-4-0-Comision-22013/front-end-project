@@ -1,0 +1,15 @@
+.moviesList{
+    display: block;
+    width: 100vw;
+    overflow-x: auto;
+}
+
+.listWrapper{
+    display: inline-block;
+    white-space: nowrap;
+    /* overflow: hidden; */
+}
+
+.moviesList::-webkit-scrollbar {
+     display: none;
+}

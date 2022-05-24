@@ -5,10 +5,11 @@ import { Login } from './auth/pages/Login';
 import { NuevoPassword } from './auth/pages/NuevoPassword';
 import { OlvidePassword } from './auth/pages/OlvidePassword';
 import { Registrar } from './auth/pages/Registrar';
-import { Peliculas } from './dashboard/components/Peliculas';
+import { Peliculas } from './dashboard/components/Peliculas/Peliculas';
 import { Dashboard } from './dashboard/Dashboard';
 import { PerfilUsuario } from './dashboard/pages/PerfilUsuario';
 import { SelectProfile } from './profile/pages/SelectProfile';
+import { MoviesList } from './profile/pages/MoviesList';
 
 export const App = () => {
   return (
@@ -24,6 +25,7 @@ export const App = () => {
 
         <Route path="/" element={<Dashboard />}>
           <Route path="inicio" element={<Peliculas />}></Route>
+          <Route path="listado-peliculas" element={<MoviesList />}></Route>
           <Route path="perfil-usuario" element={<PerfilUsuario />}></Route>
         </Route>
 
