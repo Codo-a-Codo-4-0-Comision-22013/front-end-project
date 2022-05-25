@@ -1,5 +1,7 @@
-import React, { Fragment, useState } from "react";
-import './NavBar.css';
+import React, { Fragment, useState, useContext } from "react";
+// contexts
+import { useAuth } from "../context/AuthContext";
+import { ColorModeContext } from "../context/ColorModeContext"
 // components
 import Profile from './Profile';
 import ItemNavBar from "./ItemNavBar";
@@ -9,22 +11,34 @@ import AssignmentIndIcon from '@mui/icons-material/AssignmentInd';
 import LogoutIcon from '@mui/icons-material/Logout';
 import SportsSoccerIcon from '@mui/icons-material/SportsSoccer';
 import SettingsBrightnessIcon from '@mui/icons-material/SettingsBrightness';
+// style
+import './NavBar.css';
 
 function NavBar(props) {
     const { name, avatar } = props;
+    const { logout, user } = useAuth();
 
-    const [isDarkMode, setDarkMode] = useState(false);
+    const { mode, toggleColorMode } = useContext(ColorModeContext);
+
+    
+    // const [isDarkMode, setDarkMode] = useState(false);
+    
     const handleDarkMode = () => {
-        setDarkMode(!isDarkMode);
+        // setDarkMode(!isDarkMode);
+        toggleColorMode();
+        console.log(mode);
     };
 
     const [isLoged, setLoged] = useState(true);
+
     const handleLoged = () => {
-        setLoged(!isLoged);
+        // setLoged(!isLoged);
+        logout();
     };
 
     return (
-        <Fragment>
+       (user) && <Fragment>
+
             <div className="sidebar">
 
                 <div className="menu-icon">
@@ -43,7 +57,7 @@ function NavBar(props) {
                 </div>
 
                 <div className="group-items">
-                    <ItemNavBar onClick = {handleDarkMode} icon={<SettingsBrightnessIcon />} text={(isDarkMode) ? "Light Mode" : "Dark Mode"} />
+                    <ItemNavBar onClick = {handleDarkMode} icon={<SettingsBrightnessIcon />} text={(mode === 'light') ? "Dark Mode" : "Light Mode"} />
                 </div>
             </div>
         </Fragment>
