@@ -9,7 +9,7 @@ import { Alert } from "./Alert";
 
 
 const useStyles = makeStyles(theme => ({
-
+	
 	palette: {
 		primary: {
 			// light: will be calculated from palette.primary.main,
@@ -60,8 +60,23 @@ const useStyles = makeStyles(theme => ({
 		marginTop: theme.spacing(40)
 	},
 	button: {
-		margin: theme.spacing(3, 0, 2)
-	}
+		margin: theme.spacing(2.5, 0, 0)
+	},
+
+	p:{
+		marginTop: theme.spacing(40),
+		marginBottom: theme.spacing(3,0,2),
+		
+		fontSize: '0.75rem',
+		textAlign: 'center'
+	},
+	
+	register: {
+		marginTop: theme.spacing(3, 0, 2),
+		textAlign: 'center',
+		padding: '30px 0 0 0',
+	},	
+
 }));
 
 
@@ -127,7 +142,7 @@ export function Login() {
 						<TextField
 							fullWidth
 							autoFocus
-							color='palette.secondary.dark'
+							color='palette.primary.dark'
 							margin='normal'
 							variant='outlined'
 							label='Email'
@@ -138,7 +153,7 @@ export function Login() {
 						<TextField
 							fullWidth
 							type='password'
-							color='palette.secondary.dark'
+							color='palette.primary.dark'
 							margin='normal'
 							variant='outlined'
 							label='Contraseñ a'
@@ -155,7 +170,7 @@ export function Login() {
 							// onClick={() => onSubmit()}
 							onClick={handleSubmit}
 						>
-							Sign In
+							Ingresar
 						</Button>
 						{/* <a
            				 className="inline-block align-baseline font-bold text-sm text-blue-500 hover:text-blue-800"
@@ -164,19 +179,30 @@ export function Login() {
          				>
           				  Forgot Password?
          				</a> */}
-						<button
-							onClick={handleGoogleSignin}
+						
+						<Button
+							fullWidth
+							variant='contained'
+							color='dark'
 							className={classes.button}
+							type='submit'
+							onClick={handleGoogleSignin}
 						>
-							Google login
-						</button>
-						<p className={classes.button}>
-							Don't have an account?
-							<Link to="/register" className="text-blue-700 hover:text-blue-900">
-								Register
-							</Link>
-						</p>
-
+							Registro con Google
+						</Button>
+						
+						
+							<p 
+								fullWidth
+								className={classes.register}
+								>
+								No tiene cuenta?  
+								<Link to="/register"
+								>
+								 Registrese
+								</Link>
+							</p>
+						
 
 					</form>
 				</div>
