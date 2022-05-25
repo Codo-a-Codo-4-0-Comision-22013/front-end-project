@@ -6,7 +6,6 @@
     flex-direction: column;
     margin: 10px;
     padding: 15px;
-    background-color: rgba(255, 255, 255, .2);
     box-shadow: 0 8px 32px 0 rgb(27, 7, 2);
     backdrop-filter: blur(5px);
     border-radius: 10px;

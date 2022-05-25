@@ -1,3 +1,4 @@
+import { Typography } from "@mui/material";
 import React, { Fragment } from "react";
 
 function ItemNavBar(props) {
@@ -6,11 +7,11 @@ function ItemNavBar(props) {
 
     return (
         <Fragment>
-            <div className="item" onClick = {onClick}>
+            <div className="item" onClick={onClick}>
                 <div className="icon" >
                     {icon}
                 </div>
-                <span>{text}</span>
+                <Typography color={"text.primary"}>{text}</Typography>
             </div>
         </Fragment>
     );

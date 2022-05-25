@@ -7,32 +7,35 @@ import NavBar from "./components/NavBar";
 import { ProtectedRoute } from "./components/ProtectedRoute";
 
 import { AuthProvider } from "./context/AuthContext";
+import { ColorModeContextProvider } from "./context/ColorModeContext";
 
 
 function App() {
-  return (
-    <div className="app-container">
-      <AuthProvider>
-      <div className="sidebar-container">
-        <NavBar name="loco gatti" avatar="imgs/profile_picture.jpg"/>
-      </div>
-      <div className="body-container">
-        <Routes>
-          <Route path="/login" element={<Login />} />
-          <Route
-            path="/"
-            element={
-              <ProtectedRoute>
-                <Home />
-              </ProtectedRoute>
-            }
-          />
-          <Route path="/register" element={<Register />} />
-        </Routes>
-      </div>
-      </AuthProvider>
-    </div>
-  );
+	return (
+		<ColorModeContextProvider>
+			<div className="app-container">
+				<AuthProvider>
+					<div className="sidebar-container">
+						<NavBar name="loco gatti" avatar="imgs/profile_picture.jpg" />
+					</div>
+					<div className="body-container">
+						<Routes>
+							<Route path="/login" element={<Login />} />
+							<Route
+								path="/"
+								element={
+									<ProtectedRoute>
+										<Home />
+									</ProtectedRoute>
+								}
+							/>
+							<Route path="/register" element={<Register />} />
+						</Routes>
+					</div>
+				</AuthProvider>
+			</div>
+		</ColorModeContextProvider>
+	);
 }
 
 export default App;
