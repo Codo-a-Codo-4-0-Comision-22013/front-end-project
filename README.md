@@ -25,6 +25,8 @@
 * Colocar los items en la barra de navegacion (segun Proyecto Netflix).
 * Crear un componente, MediaCard.
 * Crear un componente para el 404 y capturarlo.
+* Crear un componente de control de Login
+* Usen un evento para que la media card se agrande cuando pase el mouse por arriba.
 
 # Topic of the week
 Semana: 25/4

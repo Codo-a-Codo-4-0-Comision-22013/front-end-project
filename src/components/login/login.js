@@ -8,7 +8,7 @@ function Login(props) {
     const username = useFormInput('');
     const password = useFormInput('');
     const _language  = languages['en'];
-
+    const isDarkMode = !true; // podemos usar context 
     function handleSubmit() {
 
         let jsonData = {
@@ -32,7 +32,7 @@ function Login(props) {
     }
 
     return (
-        <div className="login">
+        <div className={ isDarkMode? "login dark" : "login light"}>
             <div className="login-header">
                 <h2>{_language.LOGIN.HEADING_LOGIN}</h2>
                 <div className="login-header-logo">
