@@ -15,6 +15,17 @@
 
 * Agregar un boton al componente para que cuando se presione, este tragia un nuevo usuario desde https://jsonplaceholder.typicode.com/
 
+# Homework
+
+* Crear componente que sirva para Registro de usuario.
+* Crear componente para reinicio de contraseña.
+* Crear un componente que permita una navegacion dentro de la aplicacion.
+* Incoporar (opcionalmente) Bootstrap en el proyecto.
+* Incorporar archive de lenguajes.
+* Colocar los items en la barra de navegacion (segun Proyecto Netflix).
+* Crear un componente, MediaCard.
+* Crear un componente para el 404 y capturarlo.
+
 # Topic of the week
 Semana: 25/4
 8. Promises, asincronía y MAP
@@ -22,6 +33,14 @@ Semana: 25/4
 Semana: 2/5
 9. Consumiendo APIs
 
+Semana: 9/5
+10. Routing y Navegación
+
+Semana: 16/5
+11. Eventos
+  
+Semana: 23/5
+12. Context…..
 
 ---
 

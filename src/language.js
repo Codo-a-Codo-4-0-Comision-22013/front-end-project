@@ -16,6 +16,13 @@ export const languages = {
       HEADING_WELCOME: "Welcome ",
       MESSAGE: "This is the demo of string resources.",
     },
+    NAV: {
+      HEADING_NAV: "Navigation",
+      START: "Initial",
+      MOVIE: "Movies",
+      SERIES: "Series",
+      LIST: "List",
+    }
   },
   es: {
     
