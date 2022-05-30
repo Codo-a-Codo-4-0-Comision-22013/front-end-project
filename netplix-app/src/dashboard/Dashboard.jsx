@@ -1,10 +1,15 @@
-import { Outlet } from 'react-router-dom';
+import { Outlet } from "react-router-dom";
+import { NavBar } from "./components/NavBar";
 
 export const Dashboard = () => {
   return (
     <>
-      <h1>Dashboard</h1>
-      <Outlet />
+      <div className="md:flex md:min-h-screen">
+        <NavBar />
+      </div>
+      <div>
+        <Outlet />
+      </div>
     </>
   );
 };
