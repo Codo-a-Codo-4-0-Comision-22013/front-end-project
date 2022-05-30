@@ -1,15 +1,18 @@
 import logo from './logo.svg';
 import './App.css';
-import Navbar from './components/navbar/navbar';
 import Router from './routes';
 
+import ThemeProvider from './components/navbar/themeProvider';
+
 function App() {
+
   return (
-    
-    <div className="App">
-      <Router />
-      <span>Hola Esto es otro componente</span>
-    </div>
+      <ThemeProvider>
+        <div className="App">
+          <Router />
+          <span>Hola Esto es otro componente</span>
+        </div>
+      </ThemeProvider>
   );
 }
 
