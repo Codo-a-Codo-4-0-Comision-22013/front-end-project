@@ -1,10 +1,10 @@
 import React, { Fragment, useState, useContext } from "react";
 // contexts
-import { useAuth } from "../context/AuthContext";
-import { ColorModeContext } from "../context/ColorModeContext"
+import { useAuth } from "../context/authContext";
+import { ColorModeContext } from "../context/colorModeContext"
 // components
-import Profile from './Profile';
-import ItemNavBar from "./ItemNavBar";
+import Profile from './profile';
+import ItemNavBar from "./itemNavBar";
 // icons
 import TocIcon from '@mui/icons-material/Toc';
 import AssignmentIndIcon from '@mui/icons-material/AssignmentInd';
@@ -12,7 +12,7 @@ import LogoutIcon from '@mui/icons-material/Logout';
 import SportsSoccerIcon from '@mui/icons-material/SportsSoccer';
 import SettingsBrightnessIcon from '@mui/icons-material/SettingsBrightness';
 // style
-import './NavBar.css';
+import './navBar.css';
 import { Box } from "@mui/material";
 
 function NavBar(props) {

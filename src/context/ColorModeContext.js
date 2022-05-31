@@ -18,6 +18,7 @@ export function ColorModeContextProvider({ children }) {
 		}),
 		[mode],
 	);
+	
 
 	const theme = React.useMemo(
 		() =>

@@ -2,7 +2,7 @@ import IconButton from '@mui/material/IconButton';
 import Brightness4Icon from '@mui/icons-material/Brightness4';
 import Brightness7Icon from '@mui/icons-material/Brightness7';
 import { useContext } from 'react';
-import { ColorModeContext } from '../context/ColorModeContext';
+import { ColorModeContext } from '../context/colorModeContext';
 
 export default function ButtonColorMode() {
 

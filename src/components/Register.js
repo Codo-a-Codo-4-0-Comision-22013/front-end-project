@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Link, useNavigate } from "react-router-dom";
-import { useAuth } from "../context/AuthContext";
-import { Alert } from "./Alert";
+import { useAuth } from "../context/authContext";
+import { Alert } from "./alert";
 import { Grid, Container, Paper, TextField, Button, CssBaseline } from '@material-ui/core'
 import { makeStyles } from '@material-ui/core/styles'
 import logo from '../assets/images/qatar-world-cup-2022-2.jpg'
