@@ -18,6 +18,10 @@ export function ColorModeContextProvider({ children }) {
 		}),
 		[mode],
 	);
+<<<<<<< HEAD
+=======
+	
+>>>>>>> origin/main
 
 	const theme = React.useMemo(
 		() =>
@@ -37,4 +41,8 @@ export function ColorModeContextProvider({ children }) {
 		</ColorModeContext.Provider>
 	);
 }
+<<<<<<< HEAD
 export const useColorMode = () => React.useContext(ColorModeContext);
+=======
+export const useColorMode = () => React.useContext(ColorModeContext);
+>>>>>>> origin/main

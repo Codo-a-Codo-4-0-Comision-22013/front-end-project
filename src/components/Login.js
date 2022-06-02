@@ -13,7 +13,7 @@ const useStyles = makeStyles(theme => ({
 	palette: {
 		primary: {
 			// light: will be calculated from palette.primary.main,
-			main: '#ff4400',
+			main: 'red',
 			// dark: will be calculated from palette.primary.main,
 			// contrastText: will be calculated to contrast with palette.primary.main
 		},
@@ -28,11 +28,7 @@ const useStyles = makeStyles(theme => ({
 		tonalOffset: 0.2,
 	},
 
-
-
-
 	container: {
-
 
 		// opacity: '0.1',
 		height: '100%',
@@ -43,7 +39,9 @@ const useStyles = makeStyles(theme => ({
 			height: '100%'
 		},
 	},
+	
 	div: {
+		
 		display: 'flex',
 		flexDirection: 'column',
 		backgroundImage: `url(${logo})`,
@@ -52,14 +50,16 @@ const useStyles = makeStyles(theme => ({
 		marginTop: theme.spacing(20)
 
 	},
+	
+
 	form: {
-
-
+		
+		
 		// marginleft: theme.spacing(5),
 		width: '100%',
 		marginTop: theme.spacing(40)
 	},
-	button: {
+		button: {
 		margin: theme.spacing(2.5, 0, 0)
 	},
 
@@ -130,6 +130,7 @@ export function Login() {
 	// };
 
 	return (
+<<<<<<< HEAD
 		<Grid container component='main' className={classes.root}>
 			<CssBaseline />
 			<Container component={Paper} elevation={0} maxWidth='xs' className={classes.container}>
@@ -209,5 +210,86 @@ export function Login() {
 			</Container>
 		</Grid>
 	);
+=======
+		
+			<Grid container component='main' className={classes.root}>
+				<CssBaseline />
+				<Container component={Paper} elevation={0} maxWidth='xs' className={classes.container}>
+					<div className={classes.div}>
+
+						{error && <Alert message={error} />}
+
+						<form className={classes.form} >
+
+							<TextField
+								fullWidth
+								autoFocus
+								margin='normal'
+								variant='outlined'
+								label='Email'
+								name='email'
+								value={user.email}
+								onChange={handleChange}
+							/>
+							<TextField
+								fullWidth
+								type='password'
+								margin='normal'
+								variant='outlined'
+								label='Contraseñ a'
+								name='password'
+								value={user.password}
+								onChange={handleChange}
+							/>
+							<Button
+								fullWidth
+								variant='contained'
+								color='dark'
+								className={classes.button}
+								type='submit'
+								// onClick={() => onSubmit()}
+								onClick={handleSubmit}
+							>
+								Ingresar
+							</Button>
+							{/* <a
+							className="inline-block align-baseline font-bold text-sm text-blue-500 hover:text-blue-800"
+							href="#!"
+								onClick={handleResetPassword}
+							>
+							Forgot Password?
+							</a> */}
+							
+							<Button
+								fullWidth
+								variant='contained'
+								color='dark'
+								className={classes.button}
+								type='submit'
+								onClick={handleGoogleSignin}
+							>
+								Registro con Google
+							</Button>
+							
+							
+								<p 
+									fullWidth
+									className={classes.register}
+									>
+									No tiene cuenta?  
+									<Link to="/register"
+									>
+									Registrese
+									</Link>
+								</p>
+							
+
+						</form>
+					</div>
+				</Container>
+			</Grid>
+		
+	);	
+>>>>>>> origin/main
 }
 

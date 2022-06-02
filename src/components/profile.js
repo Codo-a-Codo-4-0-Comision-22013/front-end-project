@@ -14,4 +14,8 @@ function Profile(props) {
     )
 }
 
+<<<<<<< HEAD
 export default Profile;
+=======
+export default Profile;
+>>>>>>> origin/main

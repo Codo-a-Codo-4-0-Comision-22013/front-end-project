@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+import React from "react";
+>>>>>>> origin/main
 import { Navigate } from "react-router-dom";
 import { useAuth } from "../context/authContext";
 
