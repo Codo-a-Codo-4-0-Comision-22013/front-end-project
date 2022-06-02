@@ -4,6 +4,7 @@ import { URL } from '../../constant';
 import { languages } from '../../language';
 import './login.css';
 import Login from './login';
+import AuthenticatedUserApp from './login';
 import Profile from '../profile/profile';
 
 export default class ControLogin extends React.Component {
@@ -12,13 +13,20 @@ export default class ControLogin extends React.Component {
         super(props);
         this.state = {
             isLoggedin: false,
+            user: null
         };
     }
 
-    render() {
-        return (false? <Profile/> : <Login/>);
+    setUser( newUser ) {
+        this.setState({
+            isLoggedin: true,
+            user: newUser
+        });
     }
-  
 
-}
+    render() {
+        return (this.isLoggedin? <AuthenticatedUserApp user={this.user}/> : <Login onSuccess={this.setUser}/>);
+    }
+
+};
 

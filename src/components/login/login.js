@@ -1,20 +1,28 @@
 import { useFormInput } from '../utils/forms';
 import { URL } from '../../constant';
 import { languages } from '../../language';
+import { app } from '../../firebase/firebase';
+import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
 import './login.css';
+import { useEffect } from 'react';
 
-function Login(props) {
+function Login(callBack) {
 
     const username = useFormInput('');
     const password = useFormInput('');
     const _language  = languages['en'];
     const isDarkMode = !true; // podemos usar context 
-    function handleSubmit() {
 
+    console.log(app);
+
+    async function handleSubmit(event) {
+        event.preventDefault();
         let jsonData = {
             "username": username.value,
             "password": password.value
         };
+
+        console.log(app);
 
         const options = {
             method: "POST",
@@ -24,11 +32,26 @@ function Login(props) {
             body: JSON.stringify(jsonData)
         };
 
-        fetch(URL, options)
+        const auth = getAuth();
+        const user = await signInWithEmailAndPassword(auth, username.value, password.value)
+        .then((userCredential) => {
+            // Signed in
+            const user = userCredential.user;
+            // ...
+            //callBack(user);
+          })
+          .catch((error) => {
+            const errorCode = error.code;
+            const errorMessage = error.message;
+            console.log(errorMessage);
+          });
+        
+
+        /*fetch(URL, options)
             .then(response => response.json())
             .then(json => {
                 console.log(json)
-            });
+            });*/
     }
 
     return (
@@ -47,5 +70,18 @@ function Login(props) {
     );
 }
 
+
+export const AuthenticatedUserApp = ( {user}) => {
+    return (
+        <div>
+            <h1> You're logged as {user.displayName}</h1>
+            <code>
+                <pre>
+                    {JSON.stringify(user, null, 2)}
+                </pre>
+            </code>
+        </div>
+    );
+};
 
 export default Login;

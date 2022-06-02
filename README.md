@@ -28,6 +28,16 @@
 * Crear un componente de control de Login
 * Usen un evento para que la media card se agrande cuando pase el mouse por arriba.
 
+# Homework
+* Crear un proyecto y una app en firebase.
+* Configurar la app de React con firebase
+* Van a seleccionar un provider (Google/Microsoft/Facebook/Apple)
+* Van a crear usuarios con email/password
+* Van incorporar el boton del provider. (ver docu de firebase)
+* Van a darle funcionalidad a Create account/reset password para los componentes creados previamente.
+
+
+
 # Topic of the week
 Semana: 25/4
 8. Promises, asincronía y MAP
