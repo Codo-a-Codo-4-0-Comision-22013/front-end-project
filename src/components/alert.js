@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-=======
-import React from "react";
->>>>>>> origin/main
 export function Alert({ message }) {
   return (
     <div

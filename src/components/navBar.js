@@ -66,8 +66,4 @@ function NavBar(props) {
     );
 }
 
-<<<<<<< HEAD
 export default NavBar;
-=======
-export default NavBar;
->>>>>>> origin/main

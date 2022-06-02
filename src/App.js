@@ -8,6 +8,7 @@ import { ProtectedRoute } from "./components/protectedRoute";
 import { AuthProvider } from "./context/authContext";
 import { ColorModeContextProvider } from "./context/colorModeContext";
 import Home from "./pages/home/home";
+import { createTheme } from "@mui/material";
 
 
 function App() {

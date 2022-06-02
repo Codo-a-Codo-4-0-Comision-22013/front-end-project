@@ -17,8 +17,4 @@ function ItemNavBar(props) {
     );
 }
 
-<<<<<<< HEAD
 export default ItemNavBar;
-=======
-export default ItemNavBar;
->>>>>>> origin/main
