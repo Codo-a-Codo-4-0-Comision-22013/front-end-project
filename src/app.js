@@ -1,13 +1,13 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
-import { Login } from "./components/Login";
-import { Register } from "./components/Register";
-import NavBar from "./components/NavBar";
-import { ProtectedRoute } from "./components/ProtectedRoute";
+import { Login } from "./components/login";
+import { Register } from "./components/register";
+import NavBar from "./components/navBar";
+import { ProtectedRoute } from "./components/protectedRoute";
 
-import { AuthProvider } from "./context/AuthContext";
-import { ColorModeContextProvider } from "./context/ColorModeContext";
-import Home from "./pages/home/Home";
+import { AuthProvider } from "./context/authContext";
+import { ColorModeContextProvider } from "./context/colorModeContext";
+import Home from "./pages/home/home";
 
 
 function App() {
@@ -15,9 +15,9 @@ function App() {
 		<ColorModeContextProvider>
 			<div className="app-container">
 				<AuthProvider>
-					<div className="sidebar-container">
+					{/* <div className="sidebar-container">
 						<NavBar name="loco gatti" avatar="imgs/profile_picture.jpg" />
-					</div>
+					</div> */}
 
 					<Routes>
 						<Route path="/login" element={<Login />} />

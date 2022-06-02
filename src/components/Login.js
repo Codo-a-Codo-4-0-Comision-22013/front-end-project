@@ -3,13 +3,13 @@ import { Grid, Container, Paper, TextField, Button, CssBaseline } from '@materia
 import { makeStyles } from '@material-ui/core/styles'
 import logo from '../assets/images/qatar-world-cup-2022-2.jpg'
 import { Link, useNavigate } from "react-router-dom";
-import { useAuth } from "../context/AuthContext";
-import { Alert } from "./Alert";
+import { useAuth } from "../context/authContext";
+import { Alert } from "./alert";
 
 
 
 const useStyles = makeStyles(theme => ({
-	
+
 	palette: {
 		primary: {
 			// light: will be calculated from palette.primary.main,
@@ -63,19 +63,19 @@ const useStyles = makeStyles(theme => ({
 		margin: theme.spacing(2.5, 0, 0)
 	},
 
-	p:{
+	p: {
 		marginTop: theme.spacing(40),
-		marginBottom: theme.spacing(3,0,2),
-		
+		marginBottom: theme.spacing(3, 0, 2),
+
 		fontSize: '0.75rem',
 		textAlign: 'center'
 	},
-	
+
 	register: {
 		marginTop: theme.spacing(3, 0, 2),
 		textAlign: 'center',
 		padding: '30px 0 0 0',
-	},	
+	},
 
 }));
 
@@ -179,7 +179,7 @@ export function Login() {
          				>
           				  Forgot Password?
          				</a> */}
-						
+
 						<Button
 							fullWidth
 							variant='contained'
@@ -190,19 +190,19 @@ export function Login() {
 						>
 							Registro con Google
 						</Button>
-						
-						
-							<p 
-								fullWidth
-								className={classes.register}
-								>
-								No tiene cuenta?  
-								<Link to="/register"
-								>
-								 Registrese
-								</Link>
-							</p>
-						
+
+
+						<p
+							fullWidth
+							className={classes.register}
+						>
+							No tiene cuenta?
+							<Link to="/register"
+							>
+								Registrese
+							</Link>
+						</p>
+
 
 					</form>
 				</div>
