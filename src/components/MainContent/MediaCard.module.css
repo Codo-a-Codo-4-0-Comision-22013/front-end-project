@@ -1,0 +1,16 @@
+.card:hover{
+    box-shadow: 5px 10px 20px 1px rgba(255, 255, 255, 0.273);
+    transition: all 0.5s linear;
+}
+.card{
+    background-color: black !important;
+}
+.overflow{
+    overflow: hidden;
+}
+.cardImage{
+    transition: all 0.5s ease-in-out;
+}
+.cardImage:hover{
+    transform: scale(1.05);
+}

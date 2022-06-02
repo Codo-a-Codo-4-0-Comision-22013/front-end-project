@@ -1,6 +1,6 @@
 import { useFormInput } from '../utils/forms';
 import { URL } from '../../constant';
-import './login.css';
+import './Login.css';
 
 function Login(props){
     
