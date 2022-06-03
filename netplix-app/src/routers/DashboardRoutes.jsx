@@ -5,6 +5,7 @@ import { BuscadorScreen } from "../dashboard/pages/BuscadorScreen";
 import { MiListaScreen } from "../dashboard/pages/MiListaScreen";
 import { NetplixScreen } from "../dashboard/pages/NetplixScreen";
 import { PeliculasScreen } from "../dashboard/pages/PeliculasScreen";
+import { ReproductorScreen } from "../dashboard/pages/ReproductorScreen";
 import { SeleccionarUsuarioScreen } from "../dashboard/pages/SeleccionarUsuarioScreen";
 import { SeriesScreen } from "../dashboard/pages/SeriesScreen";
 
@@ -20,6 +21,8 @@ export const DashboardRoutes = () => {
 
           <Route path="buscador" element = {<BuscadorScreen /> } />
           <Route path="tu-cuenta" element = {<MiListaScreen /> } />
+
+          <Route path="pelicula/:id" element = {<ReproductorScreen /> } />
           {/* mover */}
           <Route path="seleccionar-cuenta" element = {<SeleccionarUsuarioScreen /> } />
       </Routes>

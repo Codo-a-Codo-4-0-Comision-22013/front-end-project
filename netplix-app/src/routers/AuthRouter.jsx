@@ -1,4 +1,5 @@
 import { Route, Routes } from "react-router-dom";
+import { ConfirmarCuenta } from "../auth/pages/ConfirmarCuenta";
 import { Login } from "../auth/pages/Login";
 import { NuevoPassword } from "../auth/pages/NuevoPassword";
 import { OlvidePassword } from "../auth/pages/OlvidePassword";
@@ -14,6 +15,7 @@ export const AuthRouter = () => {
             <Route path="registro" element={<Registrar />} />
             <Route path="olvide-password" element={<OlvidePassword />} />
             <Route path="olvide-password/:token" element={<NuevoPassword />} />
+            <Route path="confirmar-cuenta/:token" element={<ConfirmarCuenta />} />
           </Routes>
         </div>
       </main>
