@@ -1,5 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 import { NavBar } from "../dashboard/components/NavBar";
+
 import { BuscadorScreen } from "../dashboard/pages/BuscadorScreen";
 import { MiListaScreen } from "../dashboard/pages/MiListaScreen";
 import { NetplixScreen } from "../dashboard/pages/NetplixScreen";
