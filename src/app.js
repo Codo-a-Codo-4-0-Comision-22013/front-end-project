@@ -9,7 +9,7 @@ import { AuthProvider } from "./context/authContext";
 import { ColorModeContextProvider } from "./context/colorModeContext";
 import Home from "./pages/home/home";
 import { createTheme } from "@mui/material";
-
+import Footer from "./components/footer";
 
 function App() {
 	const theme = createTheme({
@@ -50,6 +50,7 @@ function App() {
 
 				</AuthProvider>
 			</div>
+			<Footer />
 		</ColorModeContextProvider>
 	);
 }
