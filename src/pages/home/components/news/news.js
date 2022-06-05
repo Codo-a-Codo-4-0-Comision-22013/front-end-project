@@ -1,36 +1,22 @@
 import { Button, Grid, Stack, Typography } from "@mui/material";
 import { Box, Container } from "@mui/system";
-import { useState } from "react";
-import NewsService from "../../../../services/newsService";
-import Item from "./item";
+import useNews from "../../../../hooks/useNews";
+
+import CardArticle from "./cardArticle";
 
 export default function News() {
 
-	const newsService = new NewsService()
-	const newsAux = []
-	const [news, setNews] = useState([])
-
-	newsService.getAll().then(response => {
-
-		response.forEach((doc) => {
-			const item = {
-				...doc.data()
-			}
-			newsAux.push(item)
-		})
-		setNews(newsAux)
-	})
+	const { news, loading } = useNews()
 
 	return (
 		<Container>
-
-
-			<Grid container spacing={4}
-				direction="row"
-				alignItems="flex-start"
-			>
-				<Grid item md={2}>
-					<Stack direction="column" spacing={3}>
+			<Grid direction="row" container alignItems="flex-start" spacing={5}>
+				<Grid item md={3}>
+					<Stack direction="column"
+						justifyContent="space-between"
+						spacing={3}
+						flexWrap="wrap"
+					>
 						<Typography variant="h4" fontWeight="bold">
 							NOTICIAS
 						</Typography>
@@ -38,17 +24,30 @@ export default function News() {
 							Entrevistas, noticias y reportajes de la Copa Mundial de la FIFA Catar 2022™.
 						</Typography>
 						<Typography variant="button">Lee todas las noticias de Catar 2022</Typography>
-
 					</Stack>
 				</Grid>
-
-				{news.map((item, i) =>
-					<Grid item md={5}>
-						<Item key={i} item={item} />
+				<Grid item md={9}>
+					<Grid container
+						direction="row"
+						spacing={3}
+					>
+						<Grid item md={6}>
+							<CardArticle item={news[0]} />
+						</Grid>
+						<Grid item md={6}>
+							<CardArticle item={news[1]} />
+						</Grid>
+						<Grid item md={4}>
+							<CardArticle item={news[2]} />
+						</Grid>
+						<Grid item md={4}>
+							<CardArticle item={news[3]} />
+						</Grid>
+						<Grid item md={4}>
+							<CardArticle item={news[4]} />
+						</Grid>
 					</Grid>
-				)}
-
-
+				</Grid>
 			</Grid>
 		</Container>
 	)
