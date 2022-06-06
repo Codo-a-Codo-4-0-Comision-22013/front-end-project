@@ -1,0 +1,43 @@
+{
+  "database": {
+    "rules": "database.rules.json"
+  },
+  "firestore": {
+    "rules": "firestore.rules",
+    "indexes": "firestore.indexes.json"
+  },
+  "functions": {
+    "predeploy": [
+      "npm --prefix \"$RESOURCE_DIR\" run lint"
+    ],
+    "source": "functions"
+  },
+  "hosting": {
+<<<<<<< HEAD
+    "public": "N",
+=======
+    "public": "public",
+>>>>>>> b0283fc9d078d06aa52951cd001493287b15a265
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+<<<<<<< HEAD
+=======
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+>>>>>>> b0283fc9d078d06aa52951cd001493287b15a265
+    ]
+  },
+  "storage": {
+    "rules": "storage.rules"
+  },
+  "emulators": {},
+  "remoteconfig": {
+    "template": "remoteconfig.template.json"
+  }
+}
