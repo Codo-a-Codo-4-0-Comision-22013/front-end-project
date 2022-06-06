@@ -24,7 +24,7 @@ const Navbar = () => {
                     <Link className="navbar-brand" to="my-list">{_language.NAV.LIST}</Link> 
                 </div>
                 <DarkMode></DarkMode>
-                <form class="d-flex">
+                <form className="d-flex">
                         <Link className="navbar-brand" to="search">
                             <FontAwesomeIcon icon={solid('search')} />
                         </Link>

@@ -1,18 +1,20 @@
+import React from "react";
 import { useFormInput } from '../utils/forms';
 import { URL } from '../../constant';
 import { languages } from '../../language';
 import { app } from '../../firebase/firebase';
 import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
 import './login.css';
-import { useEffect } from 'react';
+import ThemeContext from '../../context/ThemeContext';
 
 function Login(callBack) {
 
     const username = useFormInput('');
     const password = useFormInput('');
     const _language  = languages['en'];
-    const isDarkMode = !true; // podemos usar context 
-
+    const { dark } = React.useContext(ThemeContext);
+    const isDarkMode = dark; // podemos usar context 
+    const style =   dark ? "navbar-dark bg-dark text-white":"navbar-light bg-light";
     console.log(app);
 
     async function handleSubmit(event) {
@@ -55,8 +57,8 @@ function Login(callBack) {
     }
 
     return (
-        <div className={ isDarkMode? "login dark" : "login light"}>
-            <div className="login-header">
+        <div className={ style + " curved "}>
+            <div className="login-header ">
                 <h2>{_language.LOGIN.HEADING_LOGIN}</h2>
                 <div className="login-header-logo">
                     <label>Username</label>

@@ -6,6 +6,7 @@ import './login.css';
 import Login from './login';
 import AuthenticatedUserApp from './login';
 import Profile from '../profile/profile';
+import SocialLogin from './socialLogin';
 
 export default class ControLogin extends React.Component {
 
@@ -25,7 +26,13 @@ export default class ControLogin extends React.Component {
     }
 
     render() {
-        return (this.isLoggedin? <AuthenticatedUserApp user={this.user}/> : <Login onSuccess={this.setUser}/>);
+        return (this.isLoggedin? <AuthenticatedUserApp user={this.user}/> : 
+        <div>
+            <Login onSuccess={this.setUser}/>
+            <hr></hr>
+            <SocialLogin/>
+        </div>
+        );
     }
 
 };
