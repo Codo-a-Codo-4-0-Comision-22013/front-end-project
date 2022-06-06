@@ -3,6 +3,7 @@ import { Box, Container } from "@mui/system";
 import useNews from "../../../../hooks/useNews";
 
 import CardArticle from "./cardArticle";
+import More from "./more";
 
 export default function News() {
 
@@ -47,6 +48,7 @@ export default function News() {
 							<CardArticle item={news[4]} />
 						</Grid>
 					</Grid>
+					<More />
 				</Grid>
 			</Grid>
 		</Container>
