@@ -1,3 +1,18 @@
 .navbar{
     background-color: black !important;
 }
+.navbarTexts{
+    text-decoration: none;
+    color: rgba(255,255,255,.55);
+}
+.navbarTexts:hover{
+    color: rgba(255, 255, 255, 0.747);
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+}
+.navbarCategory{
+    text-decoration: none;
+    color: black;
+}
+.navbarCategory:hover{
+    color: black;
+}

@@ -1,95 +1,28 @@
-import { useFormInput } from "../utils/forms";
-import { URL } from "../../constant";
-import { languages } from "../../language";
-import { app } from "../Firebase/Firebase.js";
-import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
-import "./Login.css";
-import { useEffect } from "react";
+import React from "react";
+import { Form,Button } from "react-bootstrap";
+import styles from "./Login.module.css";
 
-function Login(callBack) {
-  const username = useFormInput("");
-  const password = useFormInput("");
-  const _language = languages["en"];
-  const isDarkMode = !true; // podemos usar context
-
-  console.log(app);
-
-  async function handleSubmit(event) {
-    event.preventDefault();
-    let jsonData = {
-      username: username.value,
-      password: password.value,
-    };
-
-    console.log(app);
-
-    const options = {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(jsonData),
-    };
-
-    const auth = getAuth();
-    const user = await signInWithEmailAndPassword(
-      auth,
-      username.value,
-      password.value
-    )
-      .then((userCredential) => {
-        // Signed in
-        const user = userCredential.user;
-        // ...
-        //callBack(user);
-      })
-      .catch((error) => {
-        const errorCode = error.code;
-        const errorMessage = error.message;
-        console.log(errorMessage);
-      });
-
-    /*fetch(URL, options)
-            .then(response => response.json())
-            .then(json => {
-                console.log(json)
-            });*/
-  }
-
+function Login() {
   return (
-    <div className={isDarkMode ? "login dark" : "login light"}>
-      <div className="login-header">
-        <h2>{_language.LOGIN.HEADING_LOGIN}</h2>
-        <div className="login-header-logo">
-          <label>Username</label>
-          <input
-            {...username}
-            placeholder={_language.LOGIN.INPUT_PLACEHOLDER_EMAIL}
-          ></input>
-          <br></br>
-          <label>Password</label>
-          <input
-            type="password"
-            {...password}
-            placeholder={_language.LOGIN.INPUT_PLACEHOLDER_PASS}
-          ></input>
-          <br></br>
-          <button onClick={handleSubmit}>Login</button>
-        </div>
-      </div>
+    <div className={styles.loginContainer}
+    style={{backgroundImage: 'url(https://assets.nflxext.com/ffe/siteui/vlv3/5ea364b1-8e59-4693-8ad8-f0eaee32d1bf/01c351de-df04-40e5-a38e-29e75096b88a/AR-es-20220530-popsignuptwoweeks-perspective_alpha_website_large.jpg)'}}>
+      <Form className={styles.loginForm}>
+        <h1>Inicia Sesión</h1>
+        <Form.Group className="mb-3" controlId="formBasicEmail">
+          <Form.Label className="white">Email</Form.Label>
+          <Form.Control type="email" placeholder="Enter email" />
+        </Form.Group>
+
+        <Form.Group className="mb-3" controlId="formBasicPassword">
+          <Form.Label>Contraseña</Form.Label>
+          <Form.Control type="password" placeholder="Password" />
+        </Form.Group>
+        <Button style={{background: '#e50914', borderColor: '#e50914'}} type="submit">
+          Ingresar
+        </Button>
+      </Form>
     </div>
   );
 }
-
-export const AuthenticatedUserApp = ({ user }) => {
-  return (
-    <div>
-      <h1> You're logged as {user.displayName}</h1>
-      <code>
-        <pre>{JSON.stringify(user, null, 2)}</pre>
-      </code>
-    </div>
-  );
-};
 
 export default Login;

@@ -10,31 +10,51 @@ const MainContent = () => {
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src="https://i.blogs.es/7e25ff/cartel-a-descubierto-netflix/1366_2000.jpeg"
+            src="https://www.whats-on-netflix.com/wp-content/uploads/2022/04/most-popular-movies-on-netflix-in-2022.webp"
             alt="First slide"
           />
           <Carousel.Caption>
-            <h2>Mas popular</h2>
+            <h2>Mas populares</h2>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src="https://es.web.img3.acsta.net/r_1280_720/newsv7/21/05/27/21/15/4623697.jpg"
+            src="https://www.xtrafondos.com/descargar.php?id=3498&resolucion=1280x720"
             alt="Second slide"
           />
           <Carousel.Caption>
-            <h2>Nuevos lanzamientos</h2>
+            <h2>Nuevo lanzamiento</h2>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src="https://indiehoy.com/wp-content/uploads/2019/04/arenas-movedizas.jpg"
+            src="https://aztechin.com/wp-content/uploads/2022/05/DSB2-1280x720.jpg"
             alt="Third slide"
           />
           <Carousel.Caption>
+            <h2>Recomendado para ti</h2>
+          </Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item>
+          <img
+            className="d-block w-100"
+            src="https://i.3djuegos.com/juegos/12333/resident_evil_2__2015_/fotos/ficha/resident_evil_2__2015_-5383370.jpg"
+            alt="Fourth slide"
+          />
+          <Carousel.Caption>
             <h2>Próximamente</h2>
+          </Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item>
+          <img
+            className="d-block w-100"
+            src="https://i.imgur.com/MZtj4qY.jpg"
+            alt="Fifth slide"
+          />
+          <Carousel.Caption>
+            <h2>Continua viendo</h2>
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>

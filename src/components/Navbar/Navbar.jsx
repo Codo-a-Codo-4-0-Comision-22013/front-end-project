@@ -8,13 +8,14 @@ import {
   FormControl,
   Button,
 } from "react-bootstrap";
-import styles from './Navbar.module.css'
+import styles from './Navbar.module.css';
+import { Link } from  'react-router-dom';
 
 const Appbar = () => {
   return (
     <Navbar className={styles.navbar} variant="dark" expand="lg">
       <Container fluid>
-        <Navbar.Brand href="#home">
+        <Navbar.Brand as={Link} to="/">
           <img
             src="https://www.freepnglogos.com/uploads/red-netflix-logo-text-png-3.png"
             width="80"
@@ -30,14 +31,14 @@ const Appbar = () => {
             style={{ maxHeight: "100px" }}
             navbarScroll
           >
-            <Nav.Link>Inicio</Nav.Link>
-            <Nav.Link>Películas</Nav.Link>
+            <Nav.Link as={Link} to="/">Inicio</Nav.Link>
+            <Nav.Link as={Link} to="/peliculas">Películas</Nav.Link>
             <NavDropdown title="Categorías" id="navbarScrollingDropdown">
-              <NavDropdown.Item>Acción</NavDropdown.Item>
-              <NavDropdown.Item>Comedia</NavDropdown.Item>
-              <NavDropdown.Item>Drama</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/peliculas/accion">Acción</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/peliculas/comedia">Comedia</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/peliculas/drama">Drama</NavDropdown.Item>
             </NavDropdown>
-            <Nav.Link>Mi Lista</Nav.Link>
+            <Nav.Link as={Link} to="/favoritos">Mi Lista</Nav.Link>
           </Nav>
           <Form className="d-flex">
             <FormControl
@@ -47,7 +48,7 @@ const Appbar = () => {
               aria-label="Search"
             />
           </Form>
-          <Button variant="dark">Iniciar Sesión</Button>
+          <Button style={{background: '#e50914', borderColor: '#e50914'}} as={Link} to="/login">Iniciar Sesión</Button>
         </Navbar.Collapse>
       </Container>
     </Navbar>

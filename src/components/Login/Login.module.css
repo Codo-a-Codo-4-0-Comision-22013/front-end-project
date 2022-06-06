@@ -1,0 +1,14 @@
+.loginContainer{
+    height: 100%;
+}
+.loginForm{
+    color: white;
+    background-color: #101010f7;
+    width: 350px;
+    padding: 40px;
+    border-radius: 10px;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
