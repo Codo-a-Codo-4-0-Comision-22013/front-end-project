@@ -36,7 +36,8 @@
 * Van incorporar el boton del provider. (ver docu de firebase)
 * Van a darle funcionalidad a Create account/reset password para los componentes creados previamente.
 
-
+# Homework
+* Crear un documento en firestore y cargarlo...
 
 # Topic of the week
 Semana: 25/4

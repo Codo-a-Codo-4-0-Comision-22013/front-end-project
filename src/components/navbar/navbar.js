@@ -8,10 +8,15 @@ import { solid } from '@fortawesome/fontawesome-svg-core/import.macro' // <-- im
 import ThemeContext from '../../context/ThemeContext';
 import logo from '../../assets/img/nflix.png';
 
+
 const Navbar = () => {
     const _language = languages['en'];
     const { dark } = React.useContext(ThemeContext);
     const style =   dark ? "navbar-dark bg-dark":"navbar-light bg-light";
+    
+  
+ 
+    
     return (
         <>
             <nav className={ "navbar navbar-expand-lg " + style }>

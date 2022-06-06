@@ -7,6 +7,11 @@ import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
 import './login.css';
 import ThemeContext from '../../context/ThemeContext';
 
+import firebase, { db } from "../../firebase/firebase";
+import { collection, getDocs } from "firebase/firestore";
+
+
+
 function Login(callBack) {
 
     const username = useFormInput('');
@@ -25,7 +30,10 @@ function Login(callBack) {
         };
 
         console.log(app);
-
+        // No va a quedar viviendo por mucho tiempo porque puede hacer mas lenta
+        // la carga del login...
+        const querySnapshot = await getDocs(collection(db, "users"));
+        console.log(querySnapshot);
         const options = {
             method: "POST",
             headers: {

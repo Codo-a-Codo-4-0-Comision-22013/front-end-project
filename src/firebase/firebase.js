@@ -1,6 +1,7 @@
 // firebase.js
 
 import * as firebase from 'firebase/app';
+import { getFirestore } from "firebase/firestore";
 //import { getAnalytics } from "firebase/analytics";
 
 const firebaseConfig = {
@@ -28,7 +29,7 @@ const firebaseConfig = {
 
 export const app = firebase.initializeApp(firebaseConfig);
 // Initialize Cloud Firestore and get a reference to the service
-//export const db = firebase.getFirestore(app);
+export const db = getFirestore(app);
 if (process.env.NODE_ENV !== 'production') {
     //const analytics = getAnalytics(app);
 }
