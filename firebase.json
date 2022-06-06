@@ -13,11 +13,24 @@
     "source": "functions"
   },
   "hosting": {
+<<<<<<< HEAD
     "public": "N",
+=======
+    "public": "public",
+>>>>>>> b0283fc9d078d06aa52951cd001493287b15a265
     "ignore": [
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
+<<<<<<< HEAD
+=======
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+>>>>>>> b0283fc9d078d06aa52951cd001493287b15a265
     ]
   },
   "storage": {
