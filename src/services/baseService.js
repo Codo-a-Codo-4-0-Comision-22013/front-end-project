@@ -1,4 +1,4 @@
-import { query, where, collection, getDocs, doc, getDoc, addDoc } from 'firebase/firestore';
+import { query, where, collection, getDocs, doc, getDoc, addDoc, orderBy } from 'firebase/firestore';
 import { db } from '../firebase';
 
 export default class BaseService {
@@ -11,10 +11,11 @@ export default class BaseService {
 	get = (operator, filterField, value) => {
 
 		if (operator && filterField && value !== undefined) {
-			const q = query(this.collectionDoc, where(filterField, operator, value));
+			const q = query(this.collectionDoc, where(filterField, operator, value), orderBy("id"));
 			return getDocs(q);
 		} else {
-			return getDocs(this.collectionDoc);
+			const q = query(this.collectionDoc, orderBy("id"));
+			return getDocs(q);
 		}
 	}
 
