@@ -21,6 +21,7 @@ export const languages = {
       START: "Initial",
       MOVIE: "Movies",
       SERIES: "Series",
+      LATEST: "Latest",
       LIST: "List",
     }
   },

@@ -4,7 +4,16 @@ export default class Row extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            movies: []
+            movies: [ {
+                id: 1,
+                title: "Spider-2",
+                year: "2020",
+                base_url: "https://image.tmdb.org/t/p/w500",
+                isLargeRow: false,
+                poster_path: "/xBHvZcjRiWyobQ9kxBhO6B2dtRI.jpg",
+                trailerUrl: "",
+                opts: null
+            }]
     };
     }
 
@@ -30,7 +39,7 @@ export default class Row extends React.Component {
             <div className="row">
               <h2>{title}</h2>
               <div className="row_posters">
-                {movies?.map((movie) => {
+                {this.movies?.map((movie) => {
                   return (
                     <img
                       key={movie.id}

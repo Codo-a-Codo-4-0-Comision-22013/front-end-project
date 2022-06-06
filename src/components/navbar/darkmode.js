@@ -6,7 +6,6 @@ const DarkMode = ( {isOn}) => {
   const { dark, toggleDark } = useContext(ThemeContext);
 
   const handleOnClick = (e) => {
-    e.preventDefault();
     toggleDark(e, dark);
   };
 
