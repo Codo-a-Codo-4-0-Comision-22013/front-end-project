@@ -1,6 +1,12 @@
+import { ConfirmarForm } from "../components/ConfirmarForm";
 
 export const ConfirmarCuenta = () => {
   return (
-    <div>ConfirmarCuenta</div>
-  )
-}
+    <>
+      <h1 className="text-zinc-800 font-black text-3xl capitalize">
+        Confirmar cuenta
+      </h1>
+      <ConfirmarForm />
+    </>
+  );
+};

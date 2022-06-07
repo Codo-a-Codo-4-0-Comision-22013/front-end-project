@@ -1,1 +1,6 @@
-// Aca se cargan las peliculas
+
+export const NetplixScreen = () => {
+  return (
+    <div>NetplixScreen</div>
+  )
+}

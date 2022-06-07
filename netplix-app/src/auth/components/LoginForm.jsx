@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 export const LoginForm = () => {
   return (
@@ -34,17 +34,17 @@ export const LoginForm = () => {
           value="Iniciar Sesión"
           className="bg-red-700 w-full py-2 mt-3 text-white uppercase font-bold shadow-md rounded hover:cursor-pointer hover:bg-red-600 transition-colors"
         />
-
       </form>
-      <button className="block mt-2 hover:text-gray-600 transition-colors">
+      <Link to="../olvide-password" className=" block text-right mt-1 mb-3 uppercase text-slate-500 text-xs">
+        Olvide mi password
+      </Link>
+      <hr />
+      <button className="block hover:text-gray-600 transition-colors">
         ¿Necesitas ayuda?
       </button>
-      <span>¿Primera vez en Netplix? </span>
 
-      <Link
-        to=""
-        className="text-sky-700 hover:text-sky-500 transition-colors"
-      >
+      <span>¿Primera vez en Netplix? </span>
+      <Link to="" className="text-sky-700 hover:text-sky-500  transition-colors">
         Suscríbete ahora
       </Link>
     </>
