@@ -13,7 +13,7 @@ function App() {
 
           <Route element={<Layout/>}>
               <Route index element={<HomePage/>}/>
-              {/* <Route index element={<ProfilePage/>}/> */}
+              <Route path='/profile' element={<ProfilePage/>}/>
           </Route>
         </Routes>
     </BrowserRouter>    
