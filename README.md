@@ -39,6 +39,12 @@
 # Homework
 * Crear un documento en firestore y cargarlo...
 
+# Homework
+* Crear el social login para Facebook, Twitter y Microsoft.
+
+# Homework
+* Conectar el componente movies al backend de firebase con la coleccion movies.
+
 # Topic of the week
 Semana: 25/4
 8. Promises, asincronía y MAP

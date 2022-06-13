@@ -10,7 +10,7 @@ import ThemeContext from '../../context/ThemeContext';
 import firebase, { db } from "../../firebase/firebase";
 import { collection, getDocs } from "firebase/firestore";
 
-
+var myDB = db;
 
 function Login(callBack) {
 
@@ -32,8 +32,11 @@ function Login(callBack) {
         console.log(app);
         // No va a quedar viviendo por mucho tiempo porque puede hacer mas lenta
         // la carga del login...
-        const querySnapshot = await getDocs(collection(db, "users"));
-        console.log(querySnapshot);
+        const myCollection = collection(myDB, "movies");
+        const querySnapshot = await getDocs(myCollection);
+        querySnapshot.forEach((doc) => {
+            console.log(`${doc.id} => ${ JSON.stringify(doc.data())}`);
+          });
         const options = {
             method: "POST",
             headers: {
