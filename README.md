@@ -13,15 +13,52 @@
 
 # homework
 
-* Agregar un boton al componente para que cuando se presione, este tragia un nuevo usuario desde https://jsonplaceholder.typicode.com/
+* Agregar un boton al componente para que cuando se presione, este traiga un nuevo usuario desde https://jsonplaceholder.typicode.com/
+# homework
+
+* Crear componente que sirva para Registro de usuario.
+* Crear componente para reinicio de contraseña.
+* Crear un componente que permita una navegacion dentro de la aplicacion.
+* Incoporar (opcionalmente) Bootstrap en el proyecto.
+* Incorporar archive de lenguajes.
+* Colocar los items en la barra de navegacion (segun Proyecto Netflix).
+* Crear un componente, MediaCard.
+* Crear un componente para el 404 y capturarlo.
+* Crear un componente de control de Login
+* Usen un evento para que la media card se agrande cuando pase el mouse por arriba.
+
+# homework
+
+* Crear un proyecto y una app en firebase.
+* Configurar la app de React con firebase
+* Van a seleccionar un provider (Google/Microsoft/Facebook/Apple)
+* Van a crear usuarios con email/password
+* Van incorporar el boton del provider. (ver docu de firebase)
+* Van a darle funcionalidad a Create account/reset password para los componentes creados previamente.
+# homework
+
+* Crear un documento en firestore y cargarlo...
+
+# homework
+
+* Crear el social login para Facebook, Twitter y Microsoft.
+# homework
+
+* Conectar el componente movies al backend de firebase con la coleccion movies.
+
+
 
 # Topic of the week
-Semana: 25/4
-8. Promises, asincronía y MAP
 
-Semana: 2/5
-9. Consumiendo APIs
+Semana: 25/4 8. Promises, asincronía y MAP
 
+Semana: 2/5 9. Consumiendo APIs
+
+Semana: 9/5 10. Routing y Navegación
+
+Semana: 16/5 11. Eventos
+
+Semana: 23/5 12. Context…..
 
 ---
 
