@@ -20,7 +20,7 @@ const HomePage = () => {
 
   if(pokemonList.length > 1){
     return (
-      <div className='flex flex-wrap justify-center'>
+      <div className='grid gap-4 grid-cols-1 place-content-center md:md:grid-cols-3 xl:grid-cols-6 '>
         {pokemonList.map(pokemon => <Card key={pokemon.url} pokemon={pokemon.name} url={pokemon.url}/>)}
       </div>
     )

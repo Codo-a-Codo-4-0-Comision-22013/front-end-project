@@ -6,6 +6,7 @@ const Profile = ({user}) => {
   useEffect(()=>{
     setUserData(user);
   },[])
+  
   return (
     <>
       <section  className='max-w-3xl min-h-full flex flex-col mx-auto p-6 md:p-12 rounded-xl shadow-2xl items-center'>
@@ -30,7 +31,7 @@ const Profile = ({user}) => {
           <div className='w-20 h-20 border-2 border-amber-700'></div>
         </div>
         
-        <p className='font-bold my-3'>Statistics</p>
+        <p className='font-bold my-3'>Team Statistics</p>
         <div className='grid grid-rows-2 grid-flow-col gap-2 text-center'>
           <div className='mb-2 px-2'>Hp</div>
           <div className='mb-2 px-2'>Speed</div>

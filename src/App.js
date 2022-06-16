@@ -4,12 +4,14 @@ import AuthPage from './pages/AuthPage/AuthPage';
 import HomePage from './pages/HomePage/HomePage';
 import Layout from './containers/Layout/Layout';
 import ProfilePage from './pages/ProfilePage/ProfilePage';
+import Signup from './components/signup/Signup';
 
 function App() {
   return (
     <BrowserRouter>
         <Routes>
           <Route path='/login' element={<AuthPage/>}/>
+          <Route path='/signup' element={<Signup/>}/>
 
           <Route element={<Layout/>}>
               <Route index element={<HomePage/>}/>
