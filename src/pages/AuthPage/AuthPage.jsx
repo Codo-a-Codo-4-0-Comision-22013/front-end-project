@@ -24,7 +24,7 @@ const AuthPage = () => {
       </main>
 
       <div className='max-w-lg mx-auto text-center mt-12 mb-6'>
-        <p>If you don't have an account you can register here! <a href="/" className='font-bold hover:underline' >Sign up</a></p>
+        <p>If you don't have an account you can register here! <a href="/signup" className='font-bold hover:underline' >Sign up</a></p>
       </div>
 
       <footer className='max-w-lg mx-auto flex justify-center'>

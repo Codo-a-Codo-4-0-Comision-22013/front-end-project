@@ -30,7 +30,6 @@ const Header = () => {
                   <a href="/profile" className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
                     My Profile
                   </a>
-
                 </div>
               </div>
             </div>
@@ -78,6 +77,12 @@ const Header = () => {
                 )}
               </button>
             </div>
+
+            <div className="flex items-center hidden md:block">
+              <a href="/login" className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
+                Login
+              </a>
+            </div>
           </div>
         </div>
 
@@ -103,6 +108,10 @@ const Header = () => {
 
                 <a href="/profile" className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-m" >
                   My Profile
+                </a>
+
+                <a href="/login" className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-m" >
+                  Login
                 </a>
 
               </div>

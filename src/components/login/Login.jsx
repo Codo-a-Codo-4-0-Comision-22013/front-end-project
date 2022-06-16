@@ -52,10 +52,10 @@ const Login = () => {
               onChange={onInputChange}/>
           </div>
           <div className='flex justify-end'>
-            <a href="/" className='text-sm text-purple-600 hover:text-purple-700 hover:underline mb-6'>Forgot your password?</a>
+            <a href="/" className='text-sm text-gray-900 hover:text-purple-700 hover:underline mb-6'>Forgot your password?</a>
           </div>
 
-          <button type="submit" className='bg-purple-600 rounded hover:bg-purple-700 text-white font-bold py-2 shadow-lg hover:shadow-xl transition duration-200 '>
+          <button type="submit" className='bg-gray-900 rounded hover:bg-gray-700 text-white font-bold py-2 shadow-lg hover:shadow-xl transition duration-200 '>
             Login
           </button>
         </form>
