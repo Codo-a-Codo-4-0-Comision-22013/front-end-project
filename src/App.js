@@ -11,6 +11,7 @@ import Signup from './components/signup/Signup';
 
 //context
 import GeneralState from './context/GeneralState';
+import TeamPage from './pages/TeamPage/TeamPage';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
 						<Route element={<Layout/>}>
 								<Route index element={<HomePage/>}/>
 								<Route path='/profile' element={<ProfilePage/>}/>
+								<Route path='/team' element={<TeamPage/>}/>
 						</Route>
 					</Routes>
 			</BrowserRouter>    
