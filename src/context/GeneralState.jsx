@@ -1,44 +1,68 @@
 import React, { useReducer } from "react"
 import GeneralContext from "./GeneralContext";
 import axios from "axios";
+import GeneralReducer from "./GeneralReducer";
 
-const UserState = ({children}) => {
+const GeneralState = ({children}) => {
 
     const initialState = {
+				pokemons: [],
+				selectedPokemon: null,
         team: [],
+				theme: "light"
     }
 
-    // const [first, setfirst] = useState(initialState)
-
-    const [state, dispatch] = useReducer(UserReducer, initialState);
+    const [state, dispatch] = useReducer(GeneralReducer, initialState);
     
-    const getPokemons= async () => {
-			const res = await axios.get('https://reqres.in/api/users')
+    const getPokemonList= async () => {
+			const res = await axios.get('https://pokeapi.co/api/v2/pokemon/?limit=20')
 
 			dispatch({ 
-				type: 'GET_USERS',
-				payload: res.data.data
-		})
+				type: 'GET_POKEMON_LIST',
+				payload: res.data.results
+			})
+		}
+
+		const getPokemon = async (url) => {
+			const res = await axios.get(url)
+			return res.data
+		}
+
+		const getPokemonDetails = async (url) => {
+			const res = await axios.get(url)
+
+			dispatch({ 
+				type: 'GET_POKEMON',
+				payload: res.data.results
+			})
 		}
     
-    // const getProfile = async (id) => {
-		// 	const res = await axios.get('https://reqres.in/api/users/' + id)
+		const addToTeam = async (pokemon) => {
+			dispatch({
+				type: 'ADD_POKEMON',
+				payload: pokemon
+			})
+		}
 
-		// 	dispatch({
-		// 		type: 'GET_PROFILE',
-		// 		payload: res.data.data
-		// 	})
-		// }
-
+		const removeFromTeam = async () => {
+			
+		}
 
     return (
-			<></>
-      // <GeneralContext.Provider value={}>
+      <GeneralContext.Provider value={{
+				getPokemonList, 
+				getPokemon, 
+				addToTeam,
+				pokemons: state.pokemons,
+				selectedPokemon: state.selectedPokemon,
+				team: state.team, 
+				theme: state.theme  
+			}}>
 
-			// 	{children}
+				{children}
 
-    	// </GeneralContext.Provider>
+    	</GeneralContext.Provider>
     )
 }
 
-export default UserState;
+export default GeneralState;
