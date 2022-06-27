@@ -1,7 +1,7 @@
 import React, { useContext, useState, useEffect } from 'react'
 import GeneralContext from '../../context/GeneralContext';
 
-const Card = ({name}) => {
+const HomeCard = ({name}) => {
     const [pokemon, setPokemon] = useState();
 		const { getPokemon, addToTeam }= useContext(GeneralContext)
 
@@ -40,4 +40,4 @@ const Card = ({name}) => {
 
 }
 
-export default Card
+export default HomeCard
