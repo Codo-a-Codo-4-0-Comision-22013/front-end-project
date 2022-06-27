@@ -45,6 +45,16 @@
 # Homework
 * Conectar el componente movies al backend de firebase con la coleccion movies.
 
+# Homework
+* Crear una tabla con los componentes e integrantes del equipo en el cual participaron y completaron su trabajo.
+Ej.
+
+| Componente         | Team Member | # Status |
+|--------------|:-----:|-----------:|
+| Profile |  Alumno 1|   <ul><li>- [x] completed</li><li>- [ ] todo</li></ul> |
+| Login      |  Alumno 2 | <ul><li>- [] completed</li><li>- [x] todo</li></ul>   |
+
+
 # Topic of the week
 Semana: 25/4
 8. Promises, asincronía y MAP
