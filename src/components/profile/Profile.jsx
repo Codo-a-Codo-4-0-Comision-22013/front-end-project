@@ -1,7 +1,10 @@
-import React, { useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
+import GeneralContext from '../../context/GeneralContext';
 
 const Profile = ({user}) => {
   const [userData, setUserData] = useState({});
+
+	const { team } = useContext(GeneralContext);
 
   useEffect(()=>{
     setUserData(user);
@@ -23,12 +26,17 @@ const Profile = ({user}) => {
 
         <p className='font-bold my-3'>Pokemon team</p>
         <div className='grid grid-rows-2 grid-flow-col gap-2'>
-          <div className='w-20 h-20 border-2 border-amber-700'></div>
-          <div className='w-20 h-20 border-2 border-amber-700'></div>
-          <div className='w-20 h-20 border-2 border-amber-700'></div>
-          <div className='w-20 h-20 border-2 border-amber-700'></div>
-          <div className='w-20 h-20 border-2 border-amber-700'></div>
-          <div className='w-20 h-20 border-2 border-amber-700'></div>
+				{ team ? 
+				  ( team.map( pokemon => (
+							<div className='border-2 border-gray-700'>
+								<img className="w-full w-20 h-20" src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/${pokemon.id}.svg`} alt="pokemon"/>
+							</div>)
+						) 
+					) 
+					:
+					(<div>No tienes pokemones en tu equipo</div>)
+				}
+          
         </div>
         
         <p className='font-bold my-3'>Team Statistics</p>

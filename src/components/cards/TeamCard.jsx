@@ -31,7 +31,7 @@ const TeamCard = ({name}) => {
                 </div>
 
 								<ul>
-									{pokemon.stats.map( e => <li><span className='bold'>{e.stat.name}</span> {e.base_stat}</li>)}
+									{pokemon.stats.map( (e, index) => <li key={index}><span className='bold'>{e.stat.name}</span> {e.base_stat}</li>)}
 								</ul>
             </div>)
     }else {
