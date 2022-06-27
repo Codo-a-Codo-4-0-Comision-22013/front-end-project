@@ -20,27 +20,33 @@ const GeneralState = ({children}) => {
 			dispatch({ 
 				type: 'GET_POKEMON_LIST',
 				payload: res.data.results
-		})
-	}
+			})
+		}
 
-	const getPokemon = async (url) => {
-		const res = await axios.get(url)
-		
-		return res.data
+		const getPokemon = async (url) => {
+			const res = await axios.get(url)
+			return res.data
+		}
 
-		// 	dispatch({ 
-		// 		type: 'GET_POKEMON',
-		// 		payload: res.results
-		// })
-	}
+		const getPokemonDetails = async (url) => {
+			const res = await axios.get(url)
+
+			dispatch({ 
+				type: 'GET_POKEMON',
+				payload: res.data.results
+			})
+		}
     
-	const addToTeam = async (pokemon) => {
+		const addToTeam = async (pokemon) => {
 			dispatch({
 				type: 'ADD_POKEMON',
 				payload: pokemon
 			})
 		}
 
+		const removeFromTeam = async () => {
+			
+		}
 
     return (
       <GeneralContext.Provider value={{

@@ -3,7 +3,7 @@ import GeneralContext from '../../context/GeneralContext';
 
 const Card = ({url}) => {
     const [pokemon, setPokemon] = useState();
-		const { getPokemon }= useContext(GeneralContext)
+		const { getPokemon, addToTeam }= useContext(GeneralContext)
 
     const getPokemonData = async () => {
         const data = await getPokemon(url);;
@@ -29,7 +29,7 @@ const Card = ({url}) => {
                     {pokemon.types.map((e) => (<span key={e.type.name} className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">{e.type.name}</span>) )}
                 </div>
 
-                <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                <button onClick={() => addToTeam(pokemon) } className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
                     Add to my team
                 </button>
             </div>)

@@ -15,6 +15,7 @@ const GeneralReducer = (state, action) => {
 						...state,
 						selectedPokemon: payload
 					}
+					
 				case ADD_POKEMON:
 					return {
 						...state,
