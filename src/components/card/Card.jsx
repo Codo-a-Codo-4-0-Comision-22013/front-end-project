@@ -1,12 +1,13 @@
 import React, { useContext, useState, useEffect } from 'react'
 import GeneralContext from '../../context/GeneralContext';
 
-const Card = ({url}) => {
+const Card = ({name}) => {
     const [pokemon, setPokemon] = useState();
 		const { getPokemon, addToTeam }= useContext(GeneralContext)
 
     const getPokemonData = async () => {
-        const data = await getPokemon(url);;
+				const url = `https://pokeapi.co/api/v2/pokemon/${name}/`;
+        const data = await getPokemon(url);
         setPokemon(data);
     };
 
@@ -20,13 +21,13 @@ const Card = ({url}) => {
                 <img className="w-full w-72 h-72" src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/${pokemon.id}.svg`} alt="pokemon"></img>
                 <div className="px-6 py-4 text-center">
                     <div className="font-bold text-xl mb-2">{pokemon.name}</div>
-                    <p className="text-lime-600 text-base italic">
+                    {/* <p className="text-lime-600 text-base italic">
                         {pokemon.types[0].type.name}
-                    </p>
+                    </p> */}
                 </div>
 
                 <div className="flex items-center px-6 pt-4 pb-2">
-                    {pokemon.types.map((e) => (<span key={e.type.name} className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">{e.type.name}</span>) )}
+                    {/* {pokemon.types.map((e) => (<span key={e.type.name} className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">{e.type.name}</span>) )} */}
                 </div>
 
                 <button onClick={() => addToTeam(pokemon) } className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">

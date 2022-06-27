@@ -12,7 +12,7 @@ const HomePage = () => {
   if( pokemons.length > 1){
 		return (
 			<div className='grid gap-4 grid-cols-1 place-content-center md:md:grid-cols-3 xl:grid-cols-6 '>
-        {pokemons.map(pokemon => <Card key={pokemon.url} url={pokemon.url}/>)}
+        {pokemons.map(pokemon => <Card key={pokemon.url} name={pokemon.name}/>)}
       </div>
     )
   }else{ 
