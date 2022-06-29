@@ -1,6 +1,3 @@
-// Componente de perfil de usuario que maneja la informacion del usuario
-// Como por ejemplo: Nombre/Username, Foto de perfil, email, etc.
-
 import React from 'react';
 import './profile.css';
 
@@ -18,10 +15,6 @@ export default class Profile extends React.Component {
     }
     
     componentDidMount() {
-        /*this.setState({
-        user: this.props.user,
-        });*/
-        // Que pasaria si el fetch no funciona? o tarda mucho?
         fetch('https://jsonplaceholder.typicode.com/users/5')
             .then(response => response.json())
             .then(json => {

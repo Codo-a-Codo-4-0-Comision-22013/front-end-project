@@ -2,7 +2,7 @@ import React from "react";
 import MediaCard from "./MediaCard";
 import { data } from "../../data";
 
-function ItemList() {
+const ItemList = () => {
     return(
         data.map(item => (
             <MediaCard
