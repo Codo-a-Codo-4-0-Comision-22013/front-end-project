@@ -4,18 +4,19 @@
 > ### Tareas React
 | Componente  | Estado Tarea | Contribuyente |
 | ------------- | ------------- | ---------------- |
-| Login      |  <ul><li> ✅ Pantalla y estilos</li> <li> ⬜️ Funcionalidades</li></ul> |  [iara baya](https://github.com/iarabaya) 
-| Context    |  ✅ Estado General configurado en Contexto  | [iara baya](https://github.com/iarabaya) 
-| Navbar     |  ✅ Estilo y responsivo  | [iara baya](https://github.com/iarabaya) 
-| Routing    |  ✅ Creacion de rutas | [iara baya](https://github.com/iarabaya) 
-| Footer     |  ✅ Diseño y funcionalidad  | [nathan](https://github.com/qjonathan999)
-| HomeCard   |  ✅ Card de Pokemon para home  | [nathan](https://github.com/qjonathan999)
-| Profile    |   ✅ Pantalla y diseño de perfil usuario (hardcode)  | [iara baya](https://github.com/iarabaya)
-| Team       |   ✅ Pantalla y cards de equipo pokemon  | [iara baya](https://github.com/iarabaya)
-| Contraseña |   ⬜️ Pantalla y funcionalidad de reinicio de contraseña | 
-| Switch     |   ⬜️ Dark / Light Mode  | 
-| Register   |  ⬜️ Pantalla y estilos  | -
-| 404        |  ⬜️ Pantalla y ruta | -
+| Login        |  <ul><li> ✅ Pantalla y estilos</li> <li> ⬜️ Funcionalidades</li></ul> |  [iara baya](https://github.com/iarabaya) 
+| Context      |  ✅ Estado General configurado en Contexto  | [iara baya](https://github.com/iarabaya) 
+| Navbar       |  ✅ Estilo y responsivo  | [iara baya](https://github.com/iarabaya) 
+| Routing      |  ✅ Creacion de rutas | [iara baya](https://github.com/iarabaya) 
+| Footer       |  ✅ Diseño y funcionalidad  | [nathan](https://github.com/qjonathan999)
+| HomeCard     |  ✅ Card de Pokemon para home  | [nathan](https://github.com/qjonathan999)
+| Profile      |   ✅ Pantalla y diseño de perfil usuario (hardcode)  | [iara baya](https://github.com/iarabaya)
+| Team         |   <ul><li> ✅ Pantalla y cards de equipo pokemon </li> <li> ⬜️ Funcionalidades (en progreso) </li></ul> | [iara baya](https://github.com/iarabaya)
+| Contraseña   |   ⬜️ Pantalla y funcionalidad de reinicio de contraseña | 
+| Switch       |   ⬜️ Dark / Light Mode  | 
+| Register     |  ⬜️ Pantalla y estilos  | -
+| 404          |  ⬜️ Pantalla y ruta | -
+| Estadisticas |  ⬜️ Tabla de estadisticas pokemon | -
 
 > ### Tareas Firebase
 | Componente  | Estado Tarea | Contribuyente |
