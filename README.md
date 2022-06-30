@@ -1,5 +1,22 @@
 # front-end-project
 
+### Progreso en tareas
+
+| Componente  | Descripcion Tarea | Contribuyente |
+| ------------- | ------------- | ---------------- |
+| Login      | - [x] Pantalla y estilos |  [iara baya](https://github.com/iarabaya) 
+| Login      | - [] Funcionalidades |  -
+| Context    | - [x] Estado General configurado en Contexto  | [iara baya](https://github.com/iarabaya) 
+| Navbar     | - [x] Estilo y responsivo  | [iara baya](https://github.com/iarabaya) 
+| Routing    | - [x] Creacion de rutas | [iara baya](https://github.com/iarabaya) 
+| Footer     | - [x] Diseño y funcionalidad  | [nathan](https://github.com/qjonathan999)
+| HomeCard   | - [x] Card de Pokemon para home  | [nathan](https://github.com/qjonathan999)
+| Profile    |  - [x] Pantalla y diseño de perfil usuario (hardcode)  | [iara baya](https://github.com/iarabaya)
+| Team       |  - [x] Pantalla y cards de equipo pokemon  | [iara baya](https://github.com/iarabaya)
+| Contraseña |  - [] Pantalla y funcionalidad de reinicio de contraseña | -
+| Switch     |  - [] Dark / Light Mode  | -
+| Register   | - [] Pantalla y estilos  | -
+
 # homework
 
 * Crear un proyecto de React.
