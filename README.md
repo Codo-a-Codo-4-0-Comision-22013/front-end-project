@@ -1,22 +1,32 @@
 # front-end-project
 
-### Progreso en tareas
-
-| Componente  | Descripcion Tarea | Contribuyente |
+## Progreso en tareas
+> ### Tareas React
+| Componente  | Estado Tarea | Contribuyente |
 | ------------- | ------------- | ---------------- |
-| Login      | - [x] Pantalla y estilos |  [iara baya](https://github.com/iarabaya) 
-| Login      | - [] Funcionalidades |  -
-| Context    | - [x] Estado General configurado en Contexto  | [iara baya](https://github.com/iarabaya) 
-| Navbar     | - [x] Estilo y responsivo  | [iara baya](https://github.com/iarabaya) 
-| Routing    | - [x] Creacion de rutas | [iara baya](https://github.com/iarabaya) 
-| Footer     | - [x] Diseño y funcionalidad  | [nathan](https://github.com/qjonathan999)
-| HomeCard   | - [x] Card de Pokemon para home  | [nathan](https://github.com/qjonathan999)
-| Profile    |  - [x] Pantalla y diseño de perfil usuario (hardcode)  | [iara baya](https://github.com/iarabaya)
-| Team       |  - [x] Pantalla y cards de equipo pokemon  | [iara baya](https://github.com/iarabaya)
-| Contraseña |  - [] Pantalla y funcionalidad de reinicio de contraseña | -
-| Switch     |  - [] Dark / Light Mode  | -
-| Register   | - [] Pantalla y estilos  | -
+| Login      |  <ul><li> ✅ Pantalla y estilos</li> <li> ⬜️ Funcionalidades</li></ul> |  [iara baya](https://github.com/iarabaya) 
+| Context    |  ✅ Estado General configurado en Contexto  | [iara baya](https://github.com/iarabaya) 
+| Navbar     |  ✅ Estilo y responsivo  | [iara baya](https://github.com/iarabaya) 
+| Routing    |  ✅ Creacion de rutas | [iara baya](https://github.com/iarabaya) 
+| Footer     |  ✅ Diseño y funcionalidad  | [nathan](https://github.com/qjonathan999)
+| HomeCard   |  ✅ Card de Pokemon para home  | [nathan](https://github.com/qjonathan999)
+| Profile    |   ✅ Pantalla y diseño de perfil usuario (hardcode)  | [iara baya](https://github.com/iarabaya)
+| Team       |   ✅ Pantalla y cards de equipo pokemon  | [iara baya](https://github.com/iarabaya)
+| Contraseña |   ⬜️ Pantalla y funcionalidad de reinicio de contraseña | 
+| Switch     |   ⬜️ Dark / Light Mode  | 
+| Register   |  ⬜️ Pantalla y estilos  | -
+| 404        |  ⬜️ Pantalla y ruta | -
 
+> ### Tareas Firebase
+| Componente  | Estado Tarea | Contribuyente |
+| ------------- | ------------- | ---------------- |
+| Firebase | Configuraciones basicas |  |
+| Firebase | Setear Provider |  |
+| Firebase | Crear usuarios con email y pass |  |
+| Firebase | Integrar con registro y reinicio de contraseña |  |
+| Firebase | Integrar con login redes sociales |  |
+| Firestore | Crear documento |  |
+| Firestore | Conectar con base de datos |  |
 # homework
 
 * Crear un proyecto de React.
