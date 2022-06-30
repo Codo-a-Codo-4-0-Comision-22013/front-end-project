@@ -44,8 +44,14 @@ const GeneralState = ({children}) => {
 			})
 		}
 
-		const removeFromTeam = async () => {
+		const removeFromTeam = async (name) => {
+
+			const newTeam = state.team.filter( pokemon => pokemon.name !== name  )
 			
+			dispatch({
+				type: 'REMOVE_POKEMON',
+				payload: newTeam
+			})
 		}
 
     return (
@@ -53,6 +59,7 @@ const GeneralState = ({children}) => {
 				getPokemonList, 
 				getPokemon, 
 				addToTeam,
+				removeFromTeam,
 				pokemons: state.pokemons,
 				selectedPokemon: state.selectedPokemon,
 				team: state.team, 
