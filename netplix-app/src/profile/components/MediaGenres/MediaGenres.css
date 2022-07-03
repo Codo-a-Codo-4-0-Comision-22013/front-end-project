@@ -1,0 +1,24 @@
+.MediaSlider{
+    display: block;
+}
+
+.MediaItem img{
+    width: 100%;
+}
+
+.swiper-button-prev, .swiper-button-next{
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.CategoryName{
+    text-align: left;
+    margin-left: 60px;
+}
+
+.swiper{
+    padding: 0 0 0 60px!important;
+}
+.swiper-button-prev:hover, .swiper-button-next:hover{
+    opacity: 1;
+}
