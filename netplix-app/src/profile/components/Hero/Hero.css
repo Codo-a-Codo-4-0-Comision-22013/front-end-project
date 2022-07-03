@@ -1,0 +1,67 @@
+.Hero{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    text-shadow: 1px 0px 5px black;
+}
+
+.Name{
+    margin-bottom: 0.5em;
+}
+
+.Hero-background{
+    position: absolute;
+    display: inline-block;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+
+.Hero-background .Hero-image{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100vh;
+}
+
+.Hero-background .Hero-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.Main-info{
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.Media-description{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    max-width: 45%;
+    margin-left: 60px;
+}
+
+.Aditional-info{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: self-end;
+}
+
+.Synopsis{
+    width: 80%;
+}
+
+.Side-paddings{
+    padding: 0 60px;
+}
