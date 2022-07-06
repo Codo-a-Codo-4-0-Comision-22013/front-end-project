@@ -3,6 +3,8 @@ import "./Hero.css";
 
 const Hero = () => {
   const [popularMovie, setpopularMovie] = useState([]);
+  const [popularMoviesPosters, setPopularMoviesPosters] = useState([]);
+  const [popularMoviesLogo, setPopularMoviesLogo] = useState([]);
 
   async function requestPopularMovies() {
     const res = await fetch(
@@ -13,8 +15,19 @@ const Hero = () => {
     setpopularMovie(json);
   }
 
+  async function requestPopularMoviesPosters() {
+    const res = await fetch(
+      `https://api.themoviedb.org/3/movie/634649/images?api_key=f838ee187fe52f9fc1e6048815ba64f7`
+    );
+    const json = await res.json();
+
+    setPopularMoviesPosters(json.backdrops[0].file_path);
+    setPopularMoviesLogo(json.logos[1].file_path);
+  }
+
   useEffect(() => {
     requestPopularMovies();
+    requestPopularMoviesPosters();
   }, []);
 
   return (
@@ -22,7 +35,7 @@ const Hero = () => {
       <div className="Main-info">
         <div className="Media-description">
           <div className="Name text-6xl">
-            <p>{popularMovie.title}</p>
+            { popularMoviesLogo !== null && <img src={`https://image.tmdb.org/t/p/w400${popularMoviesLogo}`} alt={popularMovie.title} loading="lazy" /> || <p>{popularMovie.title}</p>}                       
           </div>
           <p className="Synopsis">{popularMovie.overview}</p>
         </div>
@@ -30,7 +43,7 @@ const Hero = () => {
       <div className="Hero-background">
         <picture className="Hero-image">
           <img
-            src={`https://image.tmdb.org/t/p/w500/${popularMovie.backdrop_path}`}
+            src={`https://image.tmdb.org/t/p/original${popularMoviesPosters}`}
             alt={popularMovie.title}
             loading="lazy"
           />
