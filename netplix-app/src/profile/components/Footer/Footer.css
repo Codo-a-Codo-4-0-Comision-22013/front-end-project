@@ -1,0 +1,33 @@
+.Footer{
+    margin-top: 40px;
+    padding: 60px;
+}
+
+.Title{
+    margin-bottom: 20px;
+}
+
+.MembersList{
+    margin-top: 10px;
+}
+
+.TeamMember{
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.TeamMember:last-child{
+    margin-bottom: 0;
+}
+
+.TeamMember p{
+    margin-right: 10px;
+}
+
+.TeamMember a{
+    margin: 0 10px;
+}
+
+.TeamMember svg{
+    fill: #ffffff;
+}

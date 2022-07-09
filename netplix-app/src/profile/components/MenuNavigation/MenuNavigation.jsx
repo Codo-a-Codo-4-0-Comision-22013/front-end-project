@@ -8,6 +8,7 @@ const MenuNavigation = () => {
         <Link to="/">
             <img className="MenuLogo" src={netflixLogo} alt="Netflix home page" />
         </Link>
+        <Link to="/">Inicio</Link>
         <Link to="/listado-peliculas">Peliculas</Link>
     </div>
   );
