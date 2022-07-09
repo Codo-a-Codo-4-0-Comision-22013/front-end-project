@@ -1,0 +1,16 @@
+.MenuNavigation{
+    display: flex;
+    align-items: center;
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    height: 68px;
+    padding: 0 60px;
+    background-image: linear-gradient(180deg,rgba(0,0,0,.7) 10%,transparent);
+    color: white;
+}
+
+.MenuLogo{
+    width: 92px;
+    margin-right: 25px;
+}
